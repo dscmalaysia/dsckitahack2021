@@ -1,0 +1,7 @@
+.sponsor-card {
+  width: 345px;
+  height: 465px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px 10px rgba(188, 188, 188, 0.25);
+  border-radius: 8px;
+}
