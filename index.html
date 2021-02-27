@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
-    <link href="css/sponsor-card.css" rel="stylesheet" />
-    <title>Document</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <title>DSC KitaHack 2021</title>
   </head>
-  <body class="">
-    <!-- style="position: absolute; width: 356px" -->
+  <body class="max-w-screen-xl m-auto">
+    <!-- Kim's Part-->
     <div
-      class="grid grid-cols-2 justify-items-center items-center gap-x-1"
+      class="grid grid-cols-4 justify-items-auto items-center gap-0 mx-2 my-5 rounded-lg"
       style="background-color: #fad2cf"
     >
-      <img src="img/Prizes.svg" class="w-1/4" alt="Prizes" />
-      <h1 class="text-3xl">Prize</h1>
+      <img
+        src="img/Prizes.svg"
+        class="w-1/2 justify-self-center col-start-2"
+        alt="Prizes"
+      />
+      <h1 class="text-3xl col-start-3 justify-self-center">Prize</h1>
     </div>
-    <div
-      class="container container max-w-xl m-auto grid grid-rows-1 grid-flow-row gap-4 items-center justify-start"
-    >
+    <!-- Prize section -->
+    <div class="">
       <!--Card 1-->
       <div
-        class="max-w-screen-lg lg:flex border-2 border-gray-400 rounded-lg gap-y-2"
+        class="max-w-4xl grid lg:grid-cols-2 sm:grid-cols-2 border-2 border-gray-400 rounded-lg mx-auto items-center"
       >
         <!-- lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r -->
         <img
-          class="m-10 h-48 lg:h-48 lg:w-auto flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden items-center"
+          class="p-10 justify-self-center"
           src="https://giftscardnepal.com/wp-content/uploads/2019/12/320-gp.png"
         />
-        <div class="p-4 flex flex-col justify-between leading-normal">
+        <div class="p-4 flex flex-col leading-normal">
           <div class="mb-8">
-            <div class="font-bold text-xl mb-2">
+            <div class="text-3xl underline text-shadow">
               Google Play Gift Card worth USD100
             </div>
             <p class="text-base">
@@ -44,9 +47,19 @@
       </div>
     </div>
     <div>
-      <h1 class="text-3xl">Sponsor</h1>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 justify-items-center"
+        class="grid grid-cols-4 justify-items-auto items-center gap-0 mx-2 my-5 rounded-lg"
+        style="background-color: #d2e3fc"
+      >
+        <h1 class="text-3xl col-start-2 justify-self-center">Sponsors</h1>
+        <img
+          src="img/sponsor.svg"
+          class="w-1/2 justify-self-center col-start-3"
+          alt="Prizes"
+        />
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 justify-items-center"
       >
         <div
           class="items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
@@ -101,7 +114,7 @@
           </div>
         </div>
       </div>
-      <div class="container grid grid-flow-row auto-rows-max md:auto-rows-min">
+      <!-- <div class="container grid grid-flow-row auto-rows-max md:auto-rows-min">
         <div class="sponsor-card">
           <img
             class="m-auto"
@@ -114,7 +127,7 @@
             src="https://i.pinimg.com/originals/00/ef/95/00ef95babba98ec1c4a326be11775602.png"
           />
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- judges -->
     <!-- <div
@@ -217,148 +230,174 @@
         </div>
       </div>
     </div> -->
-    <div>Judges</div>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 justify-items-center"
-    >
+    <div>
       <div
-        class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+        class="grid grid-cols-4 justify-items-auto items-center mx-2 my-5 rounded-lg"
+        style="background-color: #fad2cf"
       >
-        <div
-          class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
-            alt=""
-            class="h-full w-full"
-          />
-        </div>
-
-        <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-        <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript and
-          Angular. She is a Google Developer Expert in Web technologies &
-          Angular.
-        </p>
+        <img
+          src="img/judges.svg"
+          class="w-1/2 justify-self-center col-start-2"
+          alt="Prizes"
+        />
+        <h1 class="text-3xl col-start-3 justify-self-center">Judges</h1>
       </div>
       <div
-        class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 justify-items-center"
       >
         <div
-          class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
         >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
-            alt=""
-            class="h-full w-full"
-          />
+          <div
+            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+          <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+            and Angular. She is a Google Developer Expert in Web technologies &
+            Angular.
+          </p>
         </div>
-
-        <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-        <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript and
-          Angular. She is a Google Developer Expert in Web technologies &
-          Angular.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-      >
         <div
-          class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
         >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
-            alt=""
-            class="h-full w-full"
-          />
+          <div
+            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+          <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+            and Angular. She is a Google Developer Expert in Web technologies &
+            Angular.
+          </p>
         </div>
-
-        <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-        <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript and
-          Angular. She is a Google Developer Expert in Web technologies &
-          Angular.
-        </p>
-      </div>
-    </div>
-    <div>Meet The Mentors</div>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 justify-items-center"
-    >
-      <div
-        class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-      >
         <div
-          class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
         >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
-            alt=""
-            class="h-full w-full"
-          />
+          <div
+            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+          <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+            and Angular. She is a Google Developer Expert in Web technologies &
+            Angular.
+          </p>
         </div>
-
-        <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-        <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript and
-          Angular. She is a Google Developer Expert in Web technologies &
-          Angular.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-      >
-        <div
-          class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
-            alt=""
-            class="h-full w-full"
-          />
-        </div>
-
-        <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-        <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript and
-          Angular. She is a Google Developer Expert in Web technologies &
-          Angular.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-      >
-        <div
-          class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
-            alt=""
-            class="h-full w-full"
-          />
-        </div>
-
-        <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-        <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript and
-          Angular. She is a Google Developer Expert in Web technologies &
-          Angular.
-        </p>
       </div>
     </div>
-    <div></div>
+    <div>
+      <div
+        class="grid grid-cols-4 justify-items-auto items-center gap-0 mx-2 my-5 rounded-lg"
+        style="background-color: #ceead6"
+      >
+        <h1 class="text-3xl col-start-2 justify-self-center">
+          Meet the Mentors
+        </h1>
+        <img
+          src="img/mentor.svg"
+          class="w-1/2 justify-self-center col-start-3"
+          alt="Prizes"
+        />
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-2 gap-4 justify-items-center"
+      >
+        <div
+          class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+        >
+          <div
+            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+          <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+            and Angular. She is a Google Developer Expert in Web technologies &
+            Angular.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+        >
+          <div
+            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+          <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+            and Angular. She is a Google Developer Expert in Web technologies &
+            Angular.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+        >
+          <div
+            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+
+          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+          <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+          <p class="text-xs text-gray-500 text-center mt-3">
+            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+            and Angular. She is a Google Developer Expert in Web technologies &
+            Angular.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div></div> -->
   </body>
 </html>
