@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
+
+    <!-- JqueryCDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <title>Document</title>
+
+    <script>
+
+      $(document).ready(function() {
+          $('.landing-wrapper').load('common/landing.html');
+      });
+
+      $(document).ready(function() {
+          $('.footer-stick-wrapper').load('common/footer-stick.html');
+      });
+
+    </script>
+
   </head>
-  <body class="bg-blue-500">
-    <h1>Yo, tested with tailwind css</h1>
+  <body class="h-full">
+
+    <div class="landing-wrapper w-full h-full flex py-10 px-10"></div>
+
+    <div class="footer-stick-wrapper sticky inset-bottom-0 w-full flex py-2 px-2 bg-red-100"></div>
+
   </body>
+
 </html>

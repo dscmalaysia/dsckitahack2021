@@ -1,0 +1,43 @@
+body{
+
+    margin: 0;
+
+}
+
+.title-font{
+
+    font-size: 50px;
+    background: linear-gradient(90deg, #3300FF 0%, rgba(234, 67, 53, 0.957503) 0.01%, #4285F4 33.33%, #34A853 70.31%, #FBBC04 99.99%, #FFE600 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+.primary-font{
+
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+.description-font{
+
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+}
+
+.muted-font{
+
+    font-size: 14px;
+    color: #B3B3B3;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+}
