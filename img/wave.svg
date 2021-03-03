@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="430" fill="none" viewBox="0 0 1440 430">
+  <path fill="#FFE0E0" d="M0 258h24.15c24.15 0 72.45 0 120.75 7.122 48.3 7.659 96.6 21.097 144.9 14.378 48.3-6.719 96.6-36.281 144.9-43 48.3-6.719 96.6 6.719 144.9 7.122 48.3-.403 96.6-13.841 144.9-21.5 48.3-7.122 96.6-7.122 144.9 21.5C917.7 272.781 966 329.219 1014.3 344c48.3 14.781 96.6-14.781 144.9-21.5 48.3-6.719 96.6 6.719 144.9-14.378 48.3-21.903 96.6-78.341 120.75-107.5L1449 172v258H0V258z"/>
+  <path fill="url(#pattern0)" d="M65 363h361v33H65z"/>
+  <path fill="url(#pattern1)" d="M1251 360h51v51h-51z"/>
+  <defs>
+    <pattern id="pattern0" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use transform="matrix(.00063 0 0 .00684 0 -.003)" xlink:href="#image0"/>
+    </pattern>
+    <pattern id="pattern1" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use transform="scale(.00195)" xlink:href="#image1"/>
+    </pattern>
+  </defs>
+</svg>

@@ -1,27 +1,22 @@
-# dsckitahack2021
+# index.html merging process
 
-Regarding the project structure:
+**_MERGING PROCESS BEGAN 03/03_**
 
-1. Common - html file other than index.html
-2. css - all css files (if required)
-3. font - font file for the website
-4. img - image assets of the website
-5. js - any js file
-6. index.js - home page html
+## Key notes
 
-Regarding working on individual part (instruction)
+1.  All CSS files merged into one single CSS file `main.css` duplicates are not yet removed, we need to meet and talk about them
+2.  The `index.html` file is not fully merged, some parts are still missing and some are not made responsive yet. Need the help of the team to make them so.
+3.  Imported the pictures from Figma as SVGs.
+4.  Added relevant comments to make the code easier to read and review
 
-1. Branch out from main
-2. Work on individual part
-3. Make pull request once done
-   (While working on your part in the separate branch, do frequently merge main to your specific branch to get updated codebase)
+## What's next
 
-Request for external libraries
+1.  Review the code for feedback and comments.
+2.  Bug fixing: Responsiveness mainly and some other key features to fix.
+3.  Work on the missing stuff (mainly me taki the writer of this as of now FAQ + SCHEDULE)
 
-1. Ping in the group for request + discussion
-2. Once accepted then it could be implemented
-   (To reduce repeatition of importing libraries/importing few libraries that provide same features)
+**NOTE: I kept a backup file this time (even during the writing of this I messed up several times and lost changes because of branch changing XD don't blast me on dis pls it hurts to write code literally thrice :'( but I do have a backup file with all of the changes so no worries)**
 
-Using TailwindCSS
+**Feedback is most welcome ping me on discord**
 
-1. Import the output.css through <link> tag
+**_CHEERS LADIES AND FELLERS_**
