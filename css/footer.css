@@ -1,0 +1,17 @@
+.footer-wrapper{
+
+    background-image: url("../img/wave.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 65px;
+
+}
+
+.footer-wrapper > .right-section > a{
+
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+
+}
