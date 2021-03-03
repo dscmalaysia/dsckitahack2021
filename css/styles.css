@@ -6,7 +6,7 @@
 @import "tailwindcss/utilities";
 
 
-.mobile-title-font {
+.mobile-title-font-reg {
     font-size: 24px;
     background: -webkit-linear-gradient(#E37400, #FBBC04);
     -webkit-background-clip: text;
@@ -112,7 +112,7 @@ li {
 
 @media only screen and (min-width: 600px) {
 
-    .title-font{
+    .title-font-reg{
         font-size: 50px;
         background: -webkit-linear-gradient(#E37400, #FBBC04);
         -webkit-background-clip: text;
