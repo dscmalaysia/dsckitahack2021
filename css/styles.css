@@ -16,17 +16,22 @@
 }
 
 .mobile-primary-font{
-
-    font-size: 15px;
+    font-size: 20px;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 
 }
 
-.mobile-secondary-font{
+.mobile-overview-font{
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
 
-    font-size: 12px;
+.mobile-secondary-font{
+    font-size: 14px;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -35,7 +40,7 @@
 
 .mobile-description-font{
 
-    font-size: 10px;
+    font-size: 12px;
     color: #000000;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -69,7 +74,7 @@ li {
 }
 
 .card {
-    @apply rounded bg-white border-gray-200 shadow-light ml-7 mr-7 relative transition ease-out duration-500;
+    @apply rounded bg-white border-gray-200 shadow-light ml-7 mr-7 relative transition ease-out duration-500
 }
 
 .img-resize {
@@ -97,7 +102,13 @@ li {
 
 }
 
-
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #E8F0FE;
+}
 
 @media only screen and (min-width: 600px) {
 
@@ -112,16 +123,25 @@ li {
 
     .primary-font{
 
-        font-size: 30px;
+        font-size: 40px;
         color: #000000;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
     
     }
 
+    .overview-font{
+
+        font-size: 30px;
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    
+    }
+
     .secondary-font{
 
-        font-size: 23px;
+        font-size: 20px;
         color: #000000;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -145,5 +165,4 @@ li {
         font-weight: 400;
     
     }
-
   }
