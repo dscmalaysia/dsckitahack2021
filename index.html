@@ -7,6 +7,7 @@
     <link href="css/output.css" rel="stylesheet" />
     <link href="css/landing.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer-stick.css">
 
     <!-- JqueryCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,29 +15,149 @@
     <title>Document</title>
 
     <script>
-
+/* 
       $(document).ready(function() {
           $('.header-stick-wrapper').load('common/header-stick.html');
-      });
+      }); */
 
-      $(document).ready(function() {
+/*       $(document).ready(function() {
           $('.landing-wrapper').load('common/landing.html');
-      });
+      }); */
 
-      $(document).ready(function() {
+/*       $(document).ready(function() {
           $('.footer-stick-wrapper').load('common/footer-stick.html');
-      });
+      }); */
 
     </script>
 
   </head>
   <body class="h-full">
 
-    <div class="header-stick-wrapper sticky inset-top-0 w-full flex py-2 px-2"></div>
+    <div class="header-stick-wrapper sticky inset-top-0 w-full flex py-2 px-2">
 
-    <div class="landing-wrapper w-full h-full flex py-10 px-10 sm:flex-col sm: w-full md:flex-row lg:flex-row"></div>
+      <nav class="bg-white-100 w-full shadow-xl">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="nav-wrapper content-center relative flex justify-items-center items-center space-between justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex justify-between items-center md:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" onclick="draweropener()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!--
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!--
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class=" flex justify-center items-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-8 w-auto" src="./img/dsc_logo.svg" alt="DSC">
+                <img class="hidden lg:block h-8 w-auto" src="./img/dsc_logo.svg" alt="DSC">
+                <h5 class="primary-font logo-text" >&nbsp&nbspDSC Kita Hack 2021</h5>
+              </div>
+            </div>
+            <!-- right section -->
+            <div class="links-wrapper absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Schedule</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prizes</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sponsors</a>
+                  <button class="reg-button-small description-font rounded">Register Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Schedule</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prizes</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sponsors</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Register Now</a>
+          </div>
+        </div>
+      </nav>
 
-    <div class="footer-stick-wrapper fixed bottom-0 w-full flex py-2 px-2 bg-red-100"></div>
+    </div>
+
+    <div class="landing-wrapper w-full h-full flex py-10 px-10 sm:flex-col sm: w-full md:flex-row lg:flex-row">
+
+      <div class="left-section w-3/6 flex py-2 px-2 md: w-full sm: w-full">
+
+        <img class="dashboard-svg" src="img/dashboard-svgs.png" alt="" height="60%" width="80%">
+    
+    </div>
+    
+    <div class="right-section w-3/6 py-4 px-4 md: w-full sm: w-full">
+    
+      <div class="card bg-white rounded py-6 px-6">
+    
+          <h2 class="title-font">DSCKita Hack 2021</h2>
+  
+          <br>
+  
+          <h5 class="primary-font">12th-13th MARCH 2021</h5>
+  
+          <br>
+  
+          <h5 class="description-font">DSCKita Hack 2021 is a 2-day hackathon presented by Developer Student Clubs (DSC) Malaysia</h5>
+  
+          <br>
+  
+          <button class="reg-button description-font">Register Now</button>
+  
+          <br>
+          <br>
+  
+          <h5 class="muted-font float-right">Registration will be closed on 25/04/2021 at 8.00am</h5>
+  
+          <br>
+    
+        </div>
+    
+      </div>
+
+    </div>
+
+    <div class="footer-stick-wrapper fixed bottom-0 w-full flex py-2 px-2 bg-red-100">
+
+      <div class="left-section w-3/6 py-4 px-4">
+
+        <h5 class="primary-font footer-font sm:text-sm">KitaHack 2021 in ... </h5>
+
+      </div>
+
+      <div class="right-section w-3/6 py-4 px-4">
+
+          <h5 class="primary-font footer-font sm:text-sm"><span class="days"></span> days <span class="hours"></span> hours <span class="min"></span> minutes <span class="sec"></span> seconds</h5>
+
+      </div>
+
+    </div>
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
 
@@ -49,12 +170,31 @@
 
         });
 
-        function draweropener(){
+        var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
 
-          console.log('open')
-          $("#mobile-menu").toggle();
+        var x = setInterval(function() {
 
-        }
+          var now = new Date().getTime();
+            
+          var distance = countDownDate - now;
+            
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          $(".days").html(`${days}`);
+          $(".hours").html(`${hours}`);
+          $(".min").html(`${minutes}`);
+          $(".sec").html(`${seconds}`);
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            $(".footer-font").html(`Expired`);
+          
+          }
+        }, 1000);
 
     </script>
 

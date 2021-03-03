@@ -77,12 +77,47 @@ body{
 
 }
 
+@media only screen and (max-width: 766px) {
+
+    .dashboard-svg{
+
+        display: none !important;
+
+    }
+
+}
+
 @media only screen and (max-width: 640px) {
 
     .landing-wrapper{
 
-        flex-direction: column !important;
+        /* flex-direction: column !important; */
+        flex-direction: column-reverse !important;
 
+    }
+
+    .title-font{
+
+        font-size: 35px !important;
+    
+    }
+
+    .primary-font{
+
+        font-size: 15px !important;
+
+    }
+    
+    .description-font{
+
+        font-size: 12px !important;
+    
+    }
+
+    .muted-font{
+
+        font-size: 10px !important;
+    
     }
 
 }
