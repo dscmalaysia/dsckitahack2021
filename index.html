@@ -312,6 +312,135 @@
         </div>
       </div>
       <!-- SCHEDULE -->
+      <div>
+        <div
+          class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
+          style="background-color: #D2E3FC"
+        >
+          <img
+            src="img/time.svg"
+            class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+            alt="Prizes"
+          />
+          <h1
+            class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header ml-5"
+            style="color: #174EA6;"
+          >
+            Schedule
+          </h1>
+      </div>
+
+      <div class="flex flex-wrap" id="tabs-id">
+        <div class="w-full">
+          <ul class="w-1/3 mx-auto flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white bg-gray-800" onclick="changeAtiveTab(event,'tab-day1')">
+                <i class="fas fa-space-shuttle text-base mr-1"></i>  Day 1
+              </a>
+            </li>
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-gray-800 bg-white" onclick="changeAtiveTab(event,'tab-day2')">
+                <i class="fas fa-cog text-base mr-1"></i>  Day 2
+              </a>
+            </li>
+          </ul>
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded">
+            <div class="px-4 py-1 flex-auto">
+              <div class="tab-content tab-space">
+                <div class="block" id="tab-day1">
+                  <!-- Day 1 -->
+                  <div class="w-2/3 mx-auto">
+                    <div class="shadow overflow-hidden rounded border-collapse border-gray-200">
+                      <table class="text-center min-w-full bg-white">
+                        <thead class="bg-gray-800 text-white">
+                          <tr>
+                            <th class="w-1/6 sm:py-4 sm:px-6 py-2 px-4 bg-grey-lightest font-bold uppercase sm:text-sm text-xs text-grey-dark border rounded border-grey-light">Time</th>
+                            <th class="w-1/3 sm:py-4 sm:px-6 py-2 px-4 bg-grey-lightest font-bold uppercase sm:text-sm text-xs text-grey-dark border rounded border-grey-light">Agenda</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">10.00-10.10</td>              
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Opening ceremony</td>
+                          </tr>
+                          <tr class="bg-gray-100">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">10.10-10.40</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Introduction to Solution Challenge </td>
+                          </tr>
+                          <tr class="">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">10.40-11.00</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Briefing for Participant</td>
+                          </tr>
+                          <tr class="bg-gray-100">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">11.00-11.35</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Launching of Event</td>
+                          </tr>
+                          <tr class="">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">11.35-14.35</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Sponsor & Speaker Session</td>
+                          </tr>
+                          <tr class="bg-gray-100">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">14.35-15.00</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Break</td>
+                          </tr>
+                          <tr class="">
+                            <td class="sm:sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">15.00-18.00</td>
+                            <td class="sm:sm:py-4 sm:px-6 py-2 px-4  border rounded border-grey-light sm:text-sm text-xs">Mentoring Session</td>
+                            <!-- <td class="py-4 px-6 border rounded  border-grey-light">
+                              <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark">Edit</a>
+                              <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-blue hover:bg-blue-dark">View</a>
+                            </td> -->
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden" id="tab-day2">
+                  <div class="w-2/3 mx-auto" id="day2">
+                    <div class="shadow overflow-hidden rounded border-collapse border-gray-200">
+                      <table class="text-center min-w-full bg-white">
+                        <thead class="bg-gray-800 text-white">
+                          <tr>
+                            <th class="w-1/6 sm:py-4 sm:px-6 py-2 px-4  bg-grey-lightest font-bold uppercase sm:text-sm text-xs text-grey-dark border rounded border-grey-light">Time</th>
+                            <th class="w-1/3 sm:py-4 sm:px-6 py-2 px-4  bg-grey-lightest font-bold uppercase sm:text-sm text-xs text-grey-dark border rounded border-grey-light">Agenda</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">10.00-10.05</td>              
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">Opening ceremony</td>
+                          </tr>
+                          <tr class="bg-gray-100">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">10.05-11.05</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">Sponsor Session</td>
+                          </tr>
+                          <tr class="">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">11.05-13.35</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">Pitching</td>
+                          </tr>
+                          <tr class="bg-gray-100">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">13.35-14.05</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">Judging Calculate</td>
+                          </tr>
+                          <tr class="">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">14.05-14.35</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">Award Announcement</td>
+                          </tr>
+                          <tr class="bg-gray-100">
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">14.35-15.05</td>
+                            <td class="sm:py-4 sm:px-6 py-2 px-4 border rounded border-grey-light sm:text-sm text-xs">Closing + Photo Session</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- FAQ -->
       <!-- Prize section - START -->
       <div
@@ -710,12 +839,12 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
 
     <script>
-      $('#mobile-menu-button').click(function () {
-        $('#mobile-menu').toggle();
-        console.log('open');
+      $("#mobile-menu-button").click(function () {
+        $("#mobile-menu").toggle();
+        console.log("open");
       });
 
-      var countDownDate = new Date('Mar 12, 2021 00:00:00').getTime();
+      var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
 
       var x = setInterval(function () {
         var now = new Date().getTime();
@@ -729,17 +858,41 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        $('.days').html(`${days}`);
-        $('.hours').html(`${hours}`);
-        $('.min').html(`${minutes}`);
-        $('.sec').html(`${seconds}`);
+        $(".days").html(`${days}`);
+        $(".hours").html(`${hours}`);
+        $(".min").html(`${minutes}`);
+        $(".sec").html(`${seconds}`);
 
         // If the count down is over, write some text
         if (distance < 0) {
           clearInterval(x);
-          $('.footer-font').html(`Expired`);
+          $(".footer-font").html(`Expired`);
         }
       }, 1000);
+
+      function changeAtiveTab(event,tabID){
+        let element = event.target;
+        while(element.nodeName !== "A"){
+          element = element.parentNode;
+        }
+        ulElement = element.parentNode.parentNode;
+        aElements = ulElement.querySelectorAll("li > a");
+        tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
+        for(let i = 0 ; i < aElements.length; i++){
+          aElements[i].classList.remove("text-white");
+          aElements[i].classList.remove("bg-gray-800");
+          aElements[i].classList.add("text-gray-800");
+          aElements[i].classList.add("bg-white");
+          tabContents[i].classList.add("hidden");
+          tabContents[i].classList.remove("block");
+        }
+        element.classList.remove("text-gray-800");
+        element.classList.remove("bg-white");
+        element.classList.add("text-white");
+        element.classList.add("bg-gray-800");
+        document.getElementById(tabID).classList.remove("hidden");
+        document.getElementById(tabID).classList.add("block");
+      }
     </script>
   </body>
 </html>
