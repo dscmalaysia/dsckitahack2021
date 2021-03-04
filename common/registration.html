@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/output.css" rel="stylesheet" />
+    <link href="../css/landing.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/footer-stick.css">
+
+    <!-- JqueryCDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Document</title>
+
+    <script>
+/* 
+      $(document).ready(function() {
+          $('.header-stick-wrapper').load('common/header-stick.html');
+      }); */
+
+/*       $(document).ready(function() {
+          $('.landing-wrapper').load('common/landing.html');
+      }); */
+
+/*       $(document).ready(function() {
+          $('.footer-stick-wrapper').load('common/footer-stick.html');
+      }); */
+
+    </script>
+
+  </head>
+<body>
+    <!-- nav bar above here -->
+    <div class="header-stick-wrapper sticky inset-top-0 w-full flex py-2 px-2">
+      <nav class="bg-white-100 w-full shadow-xl">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="nav-wrapper content-center relative flex justify-items-center items-center space-between justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex justify-between items-center md:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" onclick="draweropener()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!--
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!--
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <a href="../index.html">
+            <div class=" flex justify-center items-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-8 w-auto" src="../img/dsc_logo.svg" alt="DSC">
+                <img class="hidden lg:block h-8 w-auto" src="../img/dsc_logo.svg" alt="DSC">
+                <h5 class="primary-font logo-text" >&nbsp&nbspDSC Kita Hack 2021</h5>
+              </div>
+            </div>
+          </a>
+            <!-- right section -->
+            <div class="links-wrapper absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="../index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="../index.html#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                  <a href="../index.html#schedule" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Schedule</a>
+                  <a href="../index.html#faq" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                  <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prizes</a>
+                  <a href="../index.html#sponsor" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sponsors</a>
+                  <button class="reg-button-small description-font rounded">Register Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="../index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="../index.html#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="../index.html#schedule" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Schedule</a>
+            <a href="../index.html#faq" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+            <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prizes</a>
+            <a href="../index.html#sponsor" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sponsors</a>
+            <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Register Now</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <section class="max-w-screen-xl m-auto">
+    <div class="mt-10"> 
+        <!--registration section-->
+        <ul class="text-center block md:flex justify-between items-center mb-10">
+            <li> <!--first image-->
+                <img src="../img/kitaHackImage1.png" alt="KitaHack picture 1" width="200px" height="246px" class="mt-5 ml-auto mr-auto md:mr-10 md:ml-20">
+            </li>
+            <li>
+                <div class="rounded bg-white border-gray-200 shadow-md ml-7 mr-7 relative transition ease-out duration-500 hover:shadow-2xl p-7"> <!--registration box-->
+                    <span class="mobile-title-font-reg title-font-reg md:m-20"><!--registration title-->
+                        Registration
+                    </span>
+                    <div class="body-font">
+                        <!--prerequisites details-->
+                        <p class="mobile-secondary-font secondary-font pt-2">Requisites for this Hackathon: </p>
+                        <ul class="pb-5 p-1">
+                            <li class="mobile-description-font description-font p-1">- Lorem Ipsum is simply dummy text</li>
+                            <li class="mobile-description-font description-font p-1">- Lorem Ipsum is simply dummy text</li>
+                            <li class="mobile-description-font description-font p-1">- Lorem Ipsum is simply dummy text</li>
+                            <li class="mobile-description-font description-font p-1">- Lorem Ipsum is simply dummy text</li>
+                            <li class="mobile-description-font description-font p-1">- Lorem Ipsum is simply dummy text</li>
+                        
+                        </ul>
+                    </div>
+
+                    <div class="md:mt-5 flex justify-around"> <!-- sign up button -->
+                        <span class="relative inline-flex rounded-md shadow-sm">
+                          <!-- registration form to be linked-->
+                          <a href="#" class="py-3 px-7 uppercase text-lg font-bold tracking-wider cursor-pointer inline-flex items-center px-4 py-2 border sign-up-font ml-2 hover:bg-yellow-500 hover:text-white hover:shadow-md transition ease-out duration-500">
+                            Sign up
+                          </a>
+                          <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"></span>
+                          </span>
+                        </span>
+                      </div>
+
+                    <div class="mt-10 pb-5 ml-auto mr-auto">
+                        <!--registration closing date here-->
+                        <!-- this date to be confirmed-->
+                        <h6 class="body-font mobile-muted-font muted-font font-thin">Registration will be closed on 31/03/2021.</h6>
+                    </div>
+                </div>
+                               
+            </li>
+            <li>
+                <!--second image-->
+                <img src="../img/kitaHackImage2.png" alt="KitaHack picture 2" width="200px" height="246px" class="mt-5 ml-auto mr-auto md:ml-10 md:mr-20">
+            </li>
+        </ul>
+    </div>
+
+    <!-- RESOURCES HEADER HERE-->
+    <div
+      class="grid grid-cols-2 items-center gap-0 mx-2 my-10 mt-16 rounded-lg h-10 place-content-center py-8"
+      style="background-color: #FEEFC3"
+    >
+      <img
+        src="../img/education.svg"
+        class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+        alt="Prizes"
+      />
+      <h1
+        class="sm:text-4xl text-xl font-bold col-start-2 justify-self-start sub-header header-red ml-2"
+        style="color: #A50E0E;"
+      >
+        Resource
+      </h1>
+    </div>
+
+    <div>
+        <div class="flex items-center sm:mx-14 mx-5"><!--Intro videos title-->
+          <h1 class="mobile-primary-font primary-font">Intro Video</h1>
+        </div>
+        <div class="bg-resources-intro my-5 py-5">
+            <ul class="text-center md:flex items-center pb-10">
+                <li>
+                    <!--first image-->
+                    <img src="../img/kitaHackImage3.png" alt="KitaHack Picture 3" class="mb-5 md:mb-10 md:ml-20">
+                </li>
+                <li class="flex-1 md:mx-24 sm\:mx-6">
+                    <div class="grid-container  rounded bg-white border-gray-200 shadow-md ml-7 mr-7 relative transition ease-out duration-500 hover:shadow-2xl overflow-hidden rounded-sm mt-0 mr-20 mb-10 md:mt-10 bg-yellow-100 items-center">
+                        <div class="grid-item video-wrapper">
+                            <!--video-->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LExFrzxCUuo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="grid-item ml-8 mr-8 mb-8 mt-3">
+                            <div class="mobile-overview-font overview-font font-bold text-center hover:text-gray-600">
+                                <a href="https://developers.google.com/community/dsc-solution-challenge/resources" target="_blank">Overview of the Solution Challenge</a>
+                            </div>
+                            <div class="mobile-secondary-font secondary-font text-center">
+                                Get an overview for the steps and timeline of the Google Developer Student Clubs 2021 Solution Challenge
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                  </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- How to -->
+    <section class="justify-between my-5">
+      <div class="flex items-center sm:mx-14 mx-5">
+        <h1 class="mobile-primary-font primary-font">How to Participates In</h2>
+      </div>
+      <div class="my-5 py-5" style="background-color: #E8F0FE;">
+        <div class="grid grid-cols-3">
+          <div class="col-span-2 text-justify sm:ml-14 mr-0 ml-5 mobile-secondary-font secondary-font text-center">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+          </div>
+          <div class="self-center justify-self-end sm:pr-16">
+            <img
+              src="../img/how-to-image.svg"
+              alt="howToImage"
+            />
+          </div>
+        </div>
+        <!-- Preparation -->
+        <div>
+          <div class="justify-items-auto items-center sm:mx-14 sm:my-5 mx-5 my-2 shadow rounded-lg relative transition ease-out duration-500 hover:shadow-2xl collapsible" style="background-color: #FEEFC3">
+              <h1 class="mobile-overview-font overview-font justify-self-center text-center py-1.5 font-semibold">Preparation</h1>
+          </div>  
+          <div class="container content mx-auto px-4 md:px-12">
+            <div class="flex flex-wrap mx-12 lg:-mx-4 items-center justify-center">
+                <div class="">
+                    <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4"  style="background-color: #ffffff">
+                    </div>
+                </div>
+                <div class="">
+                  <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4"  style="background-color: #ffffff">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="justify-items-auto items-center sm:mx-14 sm:my-5 mx-5 my-2 shadow rounded-lg relative transition ease-out duration-500 hover:shadow-2xl collapsible" style="background-color: #FEEFC3">
+            <h1 class="mobile-overview-font overview-font justify-self-center text-center py-1.5 font-semibold">KitaHack</h1>
+          </div>  
+          <div class="container content mx-auto px-4 md:px-12">
+            <div class="flex flex-wrap -mx-1 lg:-mx-4 items-center justify-center">
+                <div class="">
+                    <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4" style="background-color: #ffffff">
+                    </div>
+                </div>
+                <div class="">
+                  <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4" style="background-color: #ffffff">
+                  </div>
+                </div>
+                <div class="">
+                  <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4" style="background-color: #ffffff">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="justify-items-auto items-center sm:mx-14 sm:my-5 mx-5 my-2 shadow rounded-lg relative transition ease-out duration-500 hover:shadow-2xl collapsible" style="background-color: #FEEFC3">
+            <h1 class="mobile-overview-font overview-font justify-self-center text-center py-1.5 font-semibold">Solution</h1>
+          </div>  
+          <div class="container content mx-auto px-4 md:px-12">
+            <div class="flex flex-wrap mx-12 lg:-mx-4 items-center justify-center">
+                <div class="">
+                    <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4"  style="background-color: #ffffff">
+                    </div>
+                </div>
+                <div class="">
+                  <div class="overflow-hidden rounded-lg shadow-lg h-56 w-56 mx-8 my-4"  style="background-color: #ffffff">
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+  <!-- Learning Content -->
+  <section class="justify-between my-5">
+      <div class="flex items-center sm:mx-14 mx-5">
+        <h1 class="mobile-primary-font primary-font">Learning Content</h2>
+      </div>
+      <div class="my-5 py-5" style="background-color: #CEEAD6;">
+        <div class="grid grid-cols-3">
+          <div class="col-span-2 text-justify sm:ml-14 ml-5 mx-5 mr-5 mobile-secondary-font secondary-font text-center">
+            <p>
+              Follow these learning pathways and courses to improve your skills and project. 
+              Stuck? Through the Parthean platform, you can contact Google Developers Experts, 
+              who are ready to help you with any technical questions that you might have regarding your solution.
+            </p>
+          </div>
+          <div class="justify-self-end sm:pr-20">
+            <img
+              src="../img/learningImg.svg"
+              alt="howToImage"
+              style="width: auto; height: 160px;"
+            />
+          </div>
+        </div>
+        <!-- Content -->
+          <div class="container my-5 mx-auto px-4 md:px-12">
+            <div class="flex flex-wrap -mx-1 lg:-mx-4 items-center justify-center">
+                  <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
+                    <img
+                      src="../img/androidKotlinImg.png"
+                      class="sm:w-36 sm:mx-10 w-20 mx-16 h-auto"
+                    >
+                    <p class="text-lg text-center font-semibold sm:mb-10 mb-5">Android Basics in Kotlin</p>
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white sm:py-3 sm:px-4 sm:mb-10 py-2 px-2 mx-12 border border-blue-500 hover:border-transparent rounded" 
+                    href="https://developer.android.com/courses/android-basics-kotlin/course">
+                      View Course
+                    </a>
+                  </div>
+
+                  <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
+                    <img
+                      src="../img/flutter.png"
+                      class="sm:w-24 sm:py-6 sm:mx-16 w-16 py-2 mx-16 h-auto"
+                    >
+                    <p class="text-lg text-center font-semibold sm:mb-10 mb-8">Flutter</p>
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white sm:py-3 sm:px-4 sm:mb-10 py-2 px-2 mx-12 border border-blue-500 hover:border-transparent rounded" 
+                    href="https://developers.google.com/learn/pathways/intro-to-flutter">
+                      View Course
+                    </a>
+                  </div>
+
+                  <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
+                    <img
+                      src="../img/firebaseImg.png"
+                      class="sm:w-24 sm:py-6 sm:mx-16 w-16 py-2 mx-16 h-auto"
+                    >
+                    <p class="text-lg text-center font-semibold sm:mb-10 mb-8">Firebase</p>
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white sm:py-3 sm:px-4 sm:mb-10 py-2 px-2 mx-12 border border-blue-500 hover:border-transparent rounded" 
+                    href="https://firebase.google.com/learn">
+                      View Course
+                    </a>
+                  </div>
+
+                  <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
+                    <img
+                      src="../img/angular.png"
+                      class="sm:w-24 sm:py-6 sm:mx-16 w-16 py-2 mx-16 h-auto"
+                    >
+                    <p class="text-lg text-center font-semibold sm:mb-10 mb-8">Angular</p>
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white sm:py-3 sm:px-4 sm:mb-10 py-2 px-2 mx-12 border border-blue-500 hover:border-transparent rounded" 
+                    href="https://developers.google.com/learn/topics/angular">
+                      View Course
+                    </a>
+                  </div>
+            </div>
+          </div>
+  </section> 
+</section>
+  <div class="footer-stick-wrapper fixed bottom-0 w-full flex py-2 px-2 bg-red-100">
+
+    <div class="left-section w-3/6 py-4 px-4">
+
+      <h5 class="primary-font footer-font sm:text-sm">KitaHack 2021 in ... </h5>
+
+    </div>
+
+    <div class="right-section w-3/6 py-4 px-4">
+
+        <h5 class="primary-font footer-font sm:text-sm"><span class="days"></span> days <span class="hours"></span> hours <span class="min"></span> minutes <span class="sec"></span> seconds</h5>
+
+    </div>
+
+  </div>
+  <div
+  class="footer-wrapper w-full flex py-10 px-10 sm:w-full sm:flex-row md:flex-row lg:flex-row"
+>
+  <div class="left-section sm:w-3/6l py-4 px-4">
+    <img src="../img/dsc_logo_name.svg" alt="" />
+  </div>
+
+  <div class="right-section sm:w-3/6 py-4 px-4 flex justify-end">
+    <a href=""><img src="../img/facebook.svg" alt="" /></a>
+    <a href=""><img src="../img/insta.svg" alt="" /></a>
+    <a href=""><img src="../img/linkedin.svg" alt="" /></a>
+    <a href=""><img src="../img/twitter.svg" alt="" /></a>
+    <a href=""><img style="height: 35px" src="../img/youtube.svg" alt="" /></a>
+  </div>
+</div>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
+
+  <script>
+
+      $("#mobile-menu-button").click(function (){
+
+        $("#mobile-menu").toggle();
+        console.log("open");
+
+      });
+
+      var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
+
+      var x = setInterval(function() {
+
+        var now = new Date().getTime();
+          
+        var distance = countDownDate - now;
+          
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        $(".days").html(`${days}`);
+        $(".hours").html(`${hours}`);
+        $(".min").html(`${minutes}`);
+        $(".sec").html(`${seconds}`);
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          $(".footer-font").html(`Expired`);
+        
+        }
+      }, 1000);
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
+</body>
+</html>
