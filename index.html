@@ -29,7 +29,7 @@
       }); */
     </script>
   </head>
-  <body class="h-full">
+  <body class="h-full" id="home">
     <div class="header-stick-wrapper sticky inset-top-0 w-full flex py-2 px-2">
       <nav class="bg-white-100 w-full shadow-xl">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -93,6 +93,7 @@
                 </svg>
               </button>
             </div>
+            <a href="#home">
             <div
               class="flex justify-center items-center sm:items-stretch sm:justify-start"
             >
@@ -112,6 +113,7 @@
                 </h5>
               </div> 
             </div>
+          </a>
             <!-- right section -->
             <div
               class="links-wrapper absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
@@ -120,37 +122,39 @@
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="#"
+                    href="#home"
                     class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                     >Home</a
                   >
                   <a
-                    href="#"
+                    href="#about"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >About</a
                   >
                   <a
-                    href="#"
+                    href="#schedule"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >Schedule</a
                   >
                   <a
-                    href="#"
+                    href="#faq"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >FAQ</a
                   >
                   <a
-                    href="#"
+                    href="#prize"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >Prizes</a
                   >
                   <a
-                    href="#"
+                    href="#sponsor"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >Sponsors</a
                   >
                   <button class="reg-button-small description-font rounded">
-                    Register Now
+                    <a href="common/registration.html">
+                      Register Now
+                    </a>
                   </button>
                 </div>
               </div>
@@ -163,37 +167,37 @@
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
-              href="#"
+              href="#home"
               class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >Home</a
             >
             <a
-              href="#"
+              href="#about"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >About</a
             >
             <a
-              href="#"
+              href="#schedule"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Schedule</a
             >
             <a
-              href="#"
+              href="#faq"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >FAQ</a
             >
             <a
-              href="#"
+              href="#prize"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Prizes</a
             >
             <a
-              href="#"
+              href="#sponsor"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Sponsors</a
             >
             <a
-              href="#"
+              href="common/registration.html"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Register Now</a
             >
@@ -267,6 +271,7 @@
         </h1>
       </div>
     </div> -->
+    <div id="about">
       <div
         class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
         style="background-color: #fad2cf"
@@ -311,7 +316,9 @@
           <img src="./img/intro2.svg" alt="" />
         </div>
       </div>
+    </div>
       <!-- SCHEDULE -->
+      <div id="schedule">
       <div>
         <div
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
@@ -441,8 +448,10 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- FAQ -->
        <!-- FAQ - Header -->
+       <div id="faq">
      <div
      class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
      style="background-color: #ceead6"
@@ -481,7 +490,9 @@
        </article>-->
      </div>
    </section>
+  </div>
       <!-- Prize section - START -->
+      <div id="prize">
       <div
         class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
         style="background-color: #fad2cf"
@@ -520,9 +531,11 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- Prize section - END -->
 
       <!-- SPONSORS - START -->
+      <div id="sponsor">
       <div>
         <div
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
@@ -662,8 +675,9 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- JUDGES - START -->
-      <div>
+      <div id="judges">
         <!-- JUDGES HEADER - START -->
         <div
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
@@ -724,7 +738,7 @@
       </div>
       <!-- JUDHES - END -->
       <!-- MENTORS - START -->
-      <div>
+      <div id="mentors">
         <!-- MENTORS' HEADER - START -->
         <div
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"

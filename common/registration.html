@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/output.css" rel="stylesheet" />
-    <link href="css/landing.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/footer-stick.css">
+    <link href="../css/output.css" rel="stylesheet" />
+    <link href="../css/landing.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/footer-stick.css">
 
     <!-- JqueryCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -62,13 +64,15 @@
                 </svg>
               </button>
             </div>
+            <a href="../index.html">
             <div class=" flex justify-center items-center sm:items-stretch sm:justify-start">
               <div class="flex-shrink-0 flex items-center">
-                <img class="block lg:hidden h-8 w-auto" src="./img/dsc_logo.svg" alt="DSC">
-                <img class="hidden lg:block h-8 w-auto" src="./img/dsc_logo.svg" alt="DSC">
+                <img class="block lg:hidden h-8 w-auto" src="../img/dsc_logo.svg" alt="DSC">
+                <img class="hidden lg:block h-8 w-auto" src="../img/dsc_logo.svg" alt="DSC">
                 <h5 class="primary-font logo-text" >&nbsp&nbspDSC Kita Hack 2021</h5>
               </div>
             </div>
+          </a>
             <!-- right section -->
             <div class="links-wrapper absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div class="hidden sm:block sm:ml-6">
@@ -88,7 +92,7 @@
         </div>
       
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="md:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
@@ -104,12 +108,12 @@
 
     </div>
 
-    
+    <section class="max-w-screen-xl m-auto">
     <div class="mt-10"> 
         <!--registration section-->
         <ul class="text-center block md:flex justify-between items-center mb-10">
             <li> <!--first image-->
-                <img src="img/kitaHackImage1.png" alt="KitaHack picture 1" width="200px" height="246px" class="mt-5 ml-auto mr-auto md:mr-10 md:ml-20">
+                <img src="../img/kitaHackImage1.png" alt="KitaHack picture 1" width="200px" height="246px" class="mt-5 ml-auto mr-auto md:mr-10 md:ml-20">
             </li>
             <li>
                 <div class="rounded bg-white border-gray-200 shadow-md ml-7 mr-7 relative transition ease-out duration-500 hover:shadow-2xl p-7"> <!--registration box-->
@@ -152,7 +156,7 @@
             </li>
             <li>
                 <!--second image-->
-                <img src="img/kitaHackImage2.png" alt="KitaHack picture 2" width="200px" height="246px" class="mt-5 ml-auto mr-auto md:ml-10 md:mr-20">
+                <img src="../img/kitaHackImage2.png" alt="KitaHack picture 2" width="200px" height="246px" class="mt-5 ml-auto mr-auto md:ml-10 md:mr-20">
             </li>
         </ul>
     </div>
@@ -163,7 +167,7 @@
       style="background-color: #FEEFC3"
     >
       <img
-        src="img/education.svg"
+        src="../img/education.svg"
         class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
         alt="Prizes"
       />
@@ -183,7 +187,7 @@
             <ul class="text-center md:flex items-center pb-10">
                 <li>
                     <!--first image-->
-                    <img src="img/kitaHackImage3.png" alt="KitaHack Picture 3" class="mb-5 md:mb-10 md:ml-20">
+                    <img src="../img/kitaHackImage3.png" alt="KitaHack Picture 3" class="mb-5 md:mb-10 md:ml-20">
                 </li>
                 <li class="flex-1 md:mx-24 sm\:mx-6">
                     <div class="grid-container  rounded bg-white border-gray-200 shadow-md ml-7 mr-7 relative transition ease-out duration-500 hover:shadow-2xl overflow-hidden rounded-sm mt-0 mr-20 mb-10 md:mt-10 bg-yellow-100 items-center">
@@ -224,7 +228,7 @@
           </div>
           <div class="self-center justify-self-end sm:pr-16">
             <img
-              src="img/how-to-image.svg"
+              src="../img/how-to-image.svg"
               alt="howToImage"
             />
           </div>
@@ -301,7 +305,7 @@
           </div>
           <div class="justify-self-end sm:pr-20">
             <img
-              src="img/learningImg.svg"
+              src="../img/learningImg.svg"
               alt="howToImage"
               style="width: auto; height: 160px;"
             />
@@ -312,7 +316,7 @@
             <div class="flex flex-wrap -mx-1 lg:-mx-4 items-center justify-center">
                   <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
                     <img
-                      src="img/androidKotlinImg.png"
+                      src="../img/androidKotlinImg.png"
                       class="sm:w-36 sm:mx-10 w-20 mx-16 h-auto"
                     >
                     <p class="text-lg text-center font-semibold sm:mb-10 mb-5">Android Basics in Kotlin</p>
@@ -324,7 +328,7 @@
 
                   <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
                     <img
-                      src="img/flutter.png"
+                      src="../img/flutter.png"
                       class="sm:w-24 sm:py-6 sm:mx-16 w-16 py-2 mx-16 h-auto"
                     >
                     <p class="text-lg text-center font-semibold sm:mb-10 mb-8">Flutter</p>
@@ -336,7 +340,7 @@
 
                   <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
                     <img
-                      src="img/firebaseImg.png"
+                      src="../img/firebaseImg.png"
                       class="sm:w-24 sm:py-6 sm:mx-16 w-16 py-2 mx-16 h-auto"
                     >
                     <p class="text-lg text-center font-semibold sm:mb-10 mb-8">Firebase</p>
@@ -348,7 +352,7 @@
 
                   <div class="overflow-hidden rounded-lg shadow-lg sm:h-72 sm:w-56 sm:my-8 h-48 w-52 mx-8 my-2" style="background-color: #ffffff">
                     <img
-                      src="img/angular.png"
+                      src="../img/angular.png"
                       class="sm:w-24 sm:py-6 sm:mx-16 w-16 py-2 mx-16 h-auto"
                     >
                     <p class="text-lg text-center font-semibold sm:mb-10 mb-8">Angular</p>
@@ -360,7 +364,7 @@
             </div>
           </div>
   </section> 
-
+</section>
   <div class="footer-stick-wrapper fixed bottom-0 w-full flex py-2 px-2 bg-red-100">
 
     <div class="left-section w-3/6 py-4 px-4">
@@ -376,7 +380,21 @@
     </div>
 
   </div>
+  <div
+  class="footer-wrapper w-full flex py-10 px-10 sm:w-full sm:flex-row md:flex-row lg:flex-row"
+>
+  <div class="left-section sm:w-3/6l py-4 px-4">
+    <img src="../img/dsc_logo_name.svg" alt="" />
+  </div>
 
+  <div class="right-section sm:w-3/6 py-4 px-4 flex justify-end">
+    <a href=""><img src="../img/facebook.svg" alt="" /></a>
+    <a href=""><img src="../img/insta.svg" alt="" /></a>
+    <a href=""><img src="../img/linkedin.svg" alt="" /></a>
+    <a href=""><img src="../img/twitter.svg" alt="" /></a>
+    <a href=""><img style="height: 35px" src="../img/youtube.svg" alt="" /></a>
+  </div>
+</div>
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
 
   <script>
