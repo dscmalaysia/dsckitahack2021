@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="css/footer-stick.css" />
     <link rel="stylesheet" href="css/footer.css" />
-
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- JqueryCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -442,6 +442,45 @@
         </div>
       </div>
       <!-- FAQ -->
+       <!-- FAQ - Header -->
+     <div
+     class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
+     style="background-color: #ceead6"
+   >
+     <h1
+       class="sm:text-3xl text-xl col-start-1 justify-self-end sub-header header-green mr-5"
+     >
+       FAQ
+     </h1>
+     <img
+       src="img/FAQ.svg"
+       class="w-1/2 justify-self-start -mt-10 col-start-2 ml-5 md:h-30 h-20"
+       alt="FAQ"
+     />
+   </div>
+   <!-- FAQ BODY -->
+   <section class="flex flex-wrap justify-center items-center">
+     <div class="shadow w-full mx-20" id="FAQ-WRAPPER">
+       <!--
+       
+       <article class="border-b">
+         <div class="border-l-2 bg-grey-lightest border-indigo">
+           <header
+             class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none collapsible"
+           >
+             <span class="text-indigo font-thin text-xl">
+               '+VAIABLE_QUESTION'
+             </span>
+           </header>
+           <div class="content">
+             <div class="p-10 text-grey-darkest">
+               <p>'+VAIABLE_ANSWER'</p>
+             </div>
+           </div>
+         </div>
+       </article>-->
+     </div>
+   </section>
       <!-- Prize section - START -->
       <div
         class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
@@ -812,7 +851,7 @@
         </h5>
       </div>
 
-      <div class="right-section w-3/6 py-4 px-4">
+      <div class="right-section w-3/6 py-4 px-4 ">
         <h5 class="primary-font footer-font sm:text-sm">
           <span class="days"></span> days <span class="hours"></span> hours
           <span class="min"></span> minutes <span class="sec"></span> seconds
@@ -837,7 +876,7 @@
     </div>
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
-
+    <script src="./js/FAQ.js"></script>
     <script>
       $("#mobile-menu-button").click(function () {
         $("#mobile-menu").toggle();
@@ -893,6 +932,34 @@
         document.getElementById(tabID).classList.remove("hidden");
         document.getElementById(tabID).classList.add("block");
       }
+      /* INJECT FAQs */
+      for (let index = 0; index < FAQs.length; index++) {
+         QUESTION = FAQs[index][0];
+         ANSWER = FAQs[index][1];
+         section.innerHTML +=
+           '<article class=border-b><div class="bg-grey-lightest border-indigo border-l-2"><header class="collapsible cursor-pointer flex items-center justify-between p-5 pl-8 pr-8 select-none"><span class="font-bold text-indigo text-md">' +
+           QUESTION +
+           '</span></header><div class=content><div class="p-10 text-grey-darkest text-md"><p>' +
+           ANSWER +
+           "</div></div></div></article>";
+       }
+       /*ONLY LUNCH ONCE PAGE IS LOADED*/
+       window.onload = () => {
+         // Collapsible animation
+         var question = document.getElementsByClassName("collapsible");
+         var i;
+         for (i = 0; i < question.length; i++) {
+           question[i].addEventListener("click", function () {
+             this.classList.toggle("active");
+             var content = this.nextElementSibling;
+             if (content.style.maxHeight) {
+               content.style.maxHeight = null;
+             } else {
+               content.style.maxHeight = content.scrollHeight + "px";
+             }
+           });
+         }
+       };
     </script>
   </body>
 </html>
