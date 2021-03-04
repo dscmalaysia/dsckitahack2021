@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+.mobile-title-font-reg {
+    font-size: 24px;
+    background: -webkit-linear-gradient(#E37400, #FBBC04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.mobile-primary-font{
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+.mobile-overview-font{
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.mobile-secondary-font{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+.mobile-description-font{
+
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+}
+
+.mobile-muted-font{
+
+    font-size: 8px;
+    color: #B3B3B3;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
+}
+
+.body-font {
+    font-family: 'Nunito';
+}
+
+.sign-up-font {
+    color: #E37400;
+    background-color: #FEF7E0;
+}
+
+.bg-resources-intro {
+    background-color: #FCE8E6;
+}
+
+li {
+    list-style-type: none;
+}
+
+.card {
+    @apply rounded bg-white border-gray-200 shadow-light ml-7 mr-7 relative transition ease-out duration-500
+}
+
+.img-resize {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-row-gap: 10px;
+
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #E8F0FE;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .title-font-reg{
+        font-size: 50px;
+        background: -webkit-linear-gradient(#E37400, #FBBC04);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    .primary-font{
+
+        font-size: 40px;
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    
+    }
+
+    .overview-font{
+
+        font-size: 30px;
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    
+    }
+
+    .secondary-font{
+
+        font-size: 20px;
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    
+    }
+    
+    .description-font{
+    
+        font-size: 18px;
+        color: #000000;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+    
+    }
+    
+    .muted-font{
+    
+        font-size: 14px;
+        color: #B3B3B3;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+    
+    }
+  }
