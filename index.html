@@ -159,7 +159,7 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="md:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
@@ -201,53 +201,53 @@
         </div>
       </nav>
     </div>
+    <section class="max-w-screen-xl m-auto">
+      <div
+        class="landing-wrapper w-full h-full flex py-10 px-10 sm:flex-col sm: w-full md:flex-row lg:flex-row"
+      >
+        <div class="left-section w-3/6 flex py-2 px-2 md: w-full sm: w-full">
+          <img
+            class="dashboard-svg"
+            src="img/dashboard-svgs.png"
+            alt=""
+            height="60%"
+            width="80%"
+          />
+        </div>
 
-    <div
-      class="landing-wrapper w-full h-full flex py-10 px-10 sm:flex-col sm: w-full md:flex-row lg:flex-row"
-    >
-      <div class="left-section w-3/6 flex py-2 px-2 md: w-full sm: w-full">
-        <img
-          class="dashboard-svg"
-          src="img/dashboard-svgs.png"
-          alt=""
-          height="60%"
-          width="80%"
-        />
-      </div>
+        <div class="right-section w-3/6 py-4 px-4 md: w-full sm: w-full">
+          <div class="card bg-white rounded py-6 px-6">
+            <h2 class="title-font">DSCKita Hack 2021</h2>
 
-      <div class="right-section w-3/6 py-4 px-4 md: w-full sm: w-full">
-        <div class="card bg-white rounded py-6 px-6">
-          <h2 class="title-font">DSCKita Hack 2021</h2>
+            <br />
 
-          <br />
+            <h5 class="primary-font">12th-13th MARCH 2021</h5>
 
-          <h5 class="primary-font">12th-13th MARCH 2021</h5>
+            <br />
 
-          <br />
+            <h5 class="description-font">
+              DSCKita Hack 2021 is a 2-day hackathon presented by Developer
+              Student Clubs (DSC) Malaysia
+            </h5>
 
-          <h5 class="description-font">
-            DSCKita Hack 2021 is a 2-day hackathon presented by Developer
-            Student Clubs (DSC) Malaysia
-          </h5>
+            <br />
 
-          <br />
+            <button class="reg-button description-font">Register Now</button>
 
-          <button class="reg-button description-font">Register Now</button>
+            <br />
+            <br />
 
-          <br />
-          <br />
+            <h5 class="muted-font float-right">
+              Registration will be closed on 25/04/2021 at 8.00am
+            </h5>
 
-          <h5 class="muted-font float-right">
-            Registration will be closed on 25/04/2021 at 8.00am
-          </h5>
-
-          <br />
+            <br />
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- INTRODUCTION -->
-    <div
+      <!-- INTRODUCTION -->
+      <!-- <div
       class="mx-2 flex flex-row justify-center items-center"
       style="height: 60px; background-color: #fad2cf"
     >
@@ -266,301 +266,258 @@
           What's KitaHack?
         </h1>
       </div>
-    </div>
-    <div class="intro__wrapper">
-      <div class="intro__row">
-        <img src="./img/intro1.svg" alt="" />
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
-        </p>
-      </div>
-      <div class="intro__row">
-        <p class="hide-on-med">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
-        </p>
-        <img src="./img/intro2.svg" alt="" />
-        <p class="mobile-resp-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-    <!-- SCHEDULE -->
-    <!-- FAQ -->
-    <!-- Prize section - START -->
-    <div
-      class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
-      style="background-color: #fad2cf"
-    >
-      <img
-        src="img/Prizes.svg"
-        class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
-        alt="Prizes"
-      />
-      <h1
-        class="sm:text-xl md:text-xl text-xl col-start-2 justify-self-start sub-header header-red ml-5"
-      >
-        Prize
-      </h1>
-    </div>
-    <div>
-      <!--Card 1-->
-      <div
-        class="max-w-4xl grid lg:grid-cols-2 sm:grid-cols-2 border-2 border-gray-400 rounded-lg mx-auto items-center"
-      >
-        <!-- lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r -->
-        <img class="p-10 justify-self-center" src="./img/prize-card.svg" />
-        <div class="p-4 flex leading-normal">
-          <div class="mb-8">
-            <div class="text-3xl underline text-shadow">
-              Amazon Gift Card worth USD100
-            </div>
-            <p class="text-base">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Prize section - END -->
-
-    <!-- SPONSORS - START -->
-    <div>
-      <div
-        class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
-        style="background-color: #d2e3fc"
-      >
-        <h1
-          class="sm:text-3xl text-xl col-start-1 sub-header header-blue justify-self-end mr-5"
-        >
-          Sponsors
-        </h1>
-        <img
-          src="img/sponsors.svg"
-          class="w-1/2 col-start-2 justify-self-start ml-5 md:h-30 h-20"
-          alt="Prizes"
-        />
-      </div>
-    </div>
-    <div class="flex flex-wrap -m-4 items-center py-10 w-full justify-center">
-      <!-- SPONSOR 1 -->
-      <div class="max-w-xs" style="margin: 0 50px">
-        <!-- SPONSOR CARD - STRUCTURE -->
-        <div class="bg-white shadow-xl rounded-lg py-3">
-          <!-- IMAGE -->
-          <div class="photo-wrapper p-2">
-            <img
-              class="rounded-full mx-auto"
-              width="100"
-              height="100"
-              alt="COMPANY NAME"
-            />
-          </div>
-          <!-- BODY -->
-          <div class="p-2">
-            <!-- NAME OF THE COMPANY -->
-            <h3
-              class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
-            >
-              Jecelyn
-            </h3>
-            <!-- Occupation -->
-            <div class="text-center text-gray-400 text-xs font-semibold">
-              <p>A company that does nothing</p>
-            </div>
-            <p class="text-s w-15 text-center description-font my-4">
-              A DESCPRIPTION ABOUT THE COMPANY
-            </p>
-            <div class="text-center my-3">
-              <a
-                class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-                href="#"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SPONSOR 2 -->
-      <div class="max-w-xs" style="margin: 0 50px">
-        <!-- SPONSOR CARD - STRUCTURE -->
-        <div class="bg-white shadow-xl rounded-lg py-3">
-          <!-- IMAGE -->
-          <div class="photo-wrapper p-2">
-            <img
-              class="rounded-full mx-auto"
-              width="100"
-              height="100"
-              alt="COMPANY NAME"
-            />
-          </div>
-          <!-- BODY -->
-          <div class="p-2">
-            <!-- NAME OF THE COMPANY -->
-            <h3
-              class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
-            >
-              Jecelyn
-            </h3>
-            <!-- Occupation -->
-            <div class="text-center text-gray-400 text-xs font-semibold">
-              <p>A company that does nothing</p>
-            </div>
-            <p class="text-s w-15 text-center description-font my-4">
-              A DESCPRIPTION ABOUT THE COMPANY
-            </p>
-            <div class="text-center my-3">
-              <a
-                class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-                href="#"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SPONSOR 3 -->
-      <div class="max-w-xs" style="margin: 0 50px">
-        <!-- SPONSOR CARD - STRUCTURE -->
-        <div class="bg-white shadow-xl rounded-lg py-3">
-          <!-- IMAGE -->
-          <div class="photo-wrapper p-2">
-            <img
-              class="rounded-full mx-auto"
-              width="100"
-              height="100"
-              alt="COMPANY NAME"
-            />
-          </div>
-          <!-- BODY -->
-          <div class="p-2">
-            <!-- NAME OF THE COMPANY -->
-            <h3
-              class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
-            >
-              Jecelyn
-            </h3>
-            <!-- Occupation -->
-            <div class="text-center text-gray-400 text-xs font-semibold">
-              <p>A company that does nothing</p>
-            </div>
-            <p class="text-s w-15 text-center description-font my-4">
-              A DESCPRIPTION ABOUT THE COMPANY
-            </p>
-            <div class="text-center my-3">
-              <a
-                class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-                href="#"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JUDGES - START -->
-    <div>
-      <!-- JUDGES HEADER - START -->
+    </div> -->
       <div
         class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
         style="background-color: #fad2cf"
       >
         <img
-          src="img/judges.svg"
+          src="img/intro.svg"
+          class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+          alt="Intro"
+        />
+        <h1
+          class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header header-red ml-5"
+        >
+          What's KitaHack?
+        </h1>
+      </div>
+      <div class="intro__wrapper">
+        <div class="intro__row flex flex-wrap">
+          <img src="./img/intro1.svg" alt="" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer passages, and more
+            recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="intro__row flex flex-wrap-reverse">
+          <!-- <p class="hide-on-med">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer passages, and more recently
+          with desktop publishing software like Aldus PageMaker including
+          versions of Lorem Ipsum.
+        </p> -->
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer passages, and more
+            recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.
+          </p>
+          <img src="./img/intro2.svg" alt="" />
+        </div>
+      </div>
+      <!-- SCHEDULE -->
+      <!-- FAQ -->
+      <!-- Prize section - START -->
+      <div
+        class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
+        style="background-color: #fad2cf"
+      >
+        <img
+          src="img/Prizes.svg"
           class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
           alt="Prizes"
         />
         <h1
           class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header header-red ml-5"
         >
-          Judges
+          Prize
         </h1>
       </div>
-      <div class="flex flex-wrap flex-row justify-center items-center">
+      <div>
+        <!--Card 1-->
         <div
-          class="flex flex-col mr-6 items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+          class="max-w-4xl grid lg:grid-cols-2 sm:grid-cols-2 border-2 border-gray-400 rounded-lg sm:mx-auto mx-10 items-center"
         >
-          <div
-            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-          >
-            <img src="./img/judge1.svg" alt="" class="h-full w-full" />
+          <!-- lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r -->
+          <img class="p-10 justify-self-center" src="./img/prize-card.svg" />
+          <div class="p-4 flex leading-normal">
+            <div class="mb-8">
+              <div
+                class="text-3xl underline text-shadow sm:text-left text-center"
+              >
+                Amazon Gift Card worth USD100
+              </div>
+              <p class="text-base sm:text-left text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </p>
+            </div>
           </div>
-
-          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-          <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-          <p class="text-xs text-gray-500 text-center mt-3">
-            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-            and Angular. She is a Google Developer Expert in Web technologies &
-            Angular.
-          </p>
-        </div>
-        <div
-          class="flex flex-col ml-6 items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-        >
-          <div
-            class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-          >
-            <img src="./img/judge1.svg" alt="" class="h-full w-full" />
-          </div>
-
-          <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-          <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-          <p class="text-xs text-gray-500 text-center mt-3">
-            Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-            and Angular. She is a Google Developer Expert in Web technologies &
-            Angular.
-          </p>
         </div>
       </div>
-    </div>
-    <!-- JUDHES - END -->
-    <!-- MENTORS - START -->
-    <div>
-      <!-- MENTORS' HEADER - START -->
+      <!-- Prize section - END -->
+
+      <!-- SPONSORS - START -->
+      <div>
+        <div
+          class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
+          style="background-color: #d2e3fc"
+        >
+          <h1
+            class="sm:text-3xl text-xl col-start-1 sub-header header-blue justify-self-end mr-5"
+          >
+            Sponsors
+          </h1>
+          <img
+            src="img/sponsors.svg"
+            class="w-1/2 col-start-2 justify-self-start ml-5 md:h-30 h-20"
+            alt="Prizes"
+          />
+        </div>
+      </div>
+      <!-- <div class="flex flex-wrap -m-4 items-center py-10 w-full justify-center"> -->
       <div
-        class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
-        style="background-color: #ceead6"
+        class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto"
+        style="width: 60%"
       >
-        <h1
-          class="sm:text-3xl text-xl col-start-1 justify-self-end sub-header header-green mr-5"
-        >
-          Mentors
-        </h1>
-        <img
-          src="img/mentors.svg"
-          class="w-1/2 justify-self-start col-start-2 ml-5 md:h-30 h-20"
-          alt="Prizes"
-        />
-      </div>
-      <!-- MENTORS' HEADER - END -->
+        <!-- SPONSOR 1 -->
+        <div class="max-w-xs" style="margin: 0 50px">
+          <!-- SPONSOR CARD - STRUCTURE -->
+          <div class="bg-white shadow-xl rounded-lg py-3">
+            <!-- IMAGE -->
+            <div class="photo-wrapper p-2">
+              <img
+                class="rounded-full mx-auto"
+                width="100"
+                height="100"
+                alt="COMPANY NAME"
+              />
+            </div>
+            <!-- BODY -->
+            <div class="p-2">
+              <!-- NAME OF THE COMPANY -->
+              <h3
+                class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
+              >
+                Jecelyn
+              </h3>
+              <!-- Occupation -->
+              <div class="text-center text-gray-400 text-xs font-semibold">
+                <p>A company that does nothing</p>
+              </div>
+              <p class="text-s w-15 text-center description-font my-4">
+                A DESCPRIPTION ABOUT THE COMPANY
+              </p>
+              <div class="text-center my-3">
+                <a
+                  class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <!-- FULL WRAPPER -->
-      <div class="w-full flex flex-wrap justify-center items-center">
-        <!-- INNER-WRAPPER -->
+        <!-- SPONSOR 2 -->
+        <div class="max-w-xs" style="margin: 0 50px">
+          <!-- SPONSOR CARD - STRUCTURE -->
+          <div class="bg-white shadow-xl rounded-lg py-3">
+            <!-- IMAGE -->
+            <div class="photo-wrapper p-2">
+              <img
+                class="rounded-full mx-auto"
+                width="100"
+                height="100"
+                alt="COMPANY NAME"
+              />
+            </div>
+            <!-- BODY -->
+            <div class="p-2">
+              <!-- NAME OF THE COMPANY -->
+              <h3
+                class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
+              >
+                Jecelyn
+              </h3>
+              <!-- Occupation -->
+              <div class="text-center text-gray-400 text-xs font-semibold">
+                <p>A company that does nothing</p>
+              </div>
+              <p class="text-s w-15 text-center description-font my-4">
+                A DESCPRIPTION ABOUT THE COMPANY
+              </p>
+              <div class="text-center my-3">
+                <a
+                  class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPONSOR 3 -->
+        <div class="max-w-xs" style="margin: 0 50px">
+          <!-- SPONSOR CARD - STRUCTURE -->
+          <div class="bg-white shadow-xl rounded-lg py-3">
+            <!-- IMAGE -->
+            <div class="photo-wrapper p-2">
+              <img
+                class="rounded-full mx-auto"
+                width="100"
+                height="100"
+                alt="COMPANY NAME"
+              />
+            </div>
+            <!-- BODY -->
+            <div class="p-2">
+              <!-- NAME OF THE COMPANY -->
+              <h3
+                class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
+              >
+                Jecelyn
+              </h3>
+              <!-- Occupation -->
+              <div class="text-center text-gray-400 text-xs font-semibold">
+                <p>A company that does nothing</p>
+              </div>
+              <p class="text-s w-15 text-center description-font my-4">
+                A DESCPRIPTION ABOUT THE COMPANY
+              </p>
+              <div class="text-center my-3">
+                <a
+                  class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JUDGES - START -->
+      <div>
+        <!-- JUDGES HEADER - START -->
         <div
-          class="flex flex-wrap flex-row justify-center items-center"
+          class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
+          style="background-color: #fad2cf"
+        >
+          <img
+            src="img/judges.svg"
+            class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+            alt="Prizes"
+          />
+          <h1
+            class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header header-red ml-5"
+          >
+            Judges
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto"
           style="width: 60%"
         >
-          <!-- CARD START -->
           <div
-            class="flex flex-col mr-6 mb-20 items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
           >
             <div
               class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
@@ -577,11 +534,8 @@
               & Angular.
             </p>
           </div>
-          <!-- CARD END -->
-          <!-- CARD START -->
-
           <div
-            class="flex flex-col mb-20 ml-6 items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
           >
             <div
               class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
@@ -598,53 +552,127 @@
               & Angular.
             </p>
           </div>
-
-          <!-- CARD END -->
-
-          <!-- CARD START -->
-          <div
-            class="flex flex-col mb-20 mr-6 items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-          >
-            <div
-              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-            >
-              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
-            </div>
-
-            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-            <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-            <p class="text-xs text-gray-500 text-center mt-3">
-              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-              and Angular. She is a Google Developer Expert in Web technologies
-              & Angular.
-            </p>
-          </div>
-          <!-- CARD END -->
-
-          <!-- CARD START -->
-          <div
-            class="flex flex-col mb-20 ml-6 items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-          >
-            <div
-              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-            >
-              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
-            </div>
-
-            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-            <h6 class="mt-2 text-sm font-medium">Title</h6>
-
-            <p class="text-xs text-gray-500 text-center mt-3">
-              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-              and Angular. She is a Google Developer Expert in Web technologies
-              & Angular.
-            </p>
-          </div>
-          <!-- CARD END -->
         </div>
       </div>
-    </div>
+      <!-- JUDHES - END -->
+      <!-- MENTORS - START -->
+      <div>
+        <!-- MENTORS' HEADER - START -->
+        <div
+          class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
+          style="background-color: #ceead6"
+        >
+          <h1
+            class="sm:text-3xl text-xl col-start-1 justify-self-end sub-header header-green mr-5"
+          >
+            Mentors
+          </h1>
+          <img
+            src="img/mentors.svg"
+            class="w-1/2 justify-self-start col-start-2 ml-5 md:h-30 h-20"
+            alt="Prizes"
+          />
+        </div>
+        <!-- MENTORS' HEADER - END -->
+
+        <!-- FULL WRAPPER -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto"
+          style="width: 60%"
+        >
+          <!-- INNER-WRAPPER -->
+          <!-- <div
+          class="flex flex-wrap flex-row justify-center items-center"
+          style="width: 60%"
+        > -->
+          <!-- CARD START -->
+          <div
+            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+          >
+            <div
+              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+            >
+              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
+            </div>
+
+            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+            <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+            <p class="text-xs text-gray-500 text-center mt-3">
+              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+              and Angular. She is a Google Developer Expert in Web technologies
+              & Angular.
+            </p>
+          </div>
+          <!-- CARD END -->
+          <!-- CARD START -->
+
+          <div
+            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+          >
+            <div
+              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+            >
+              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
+            </div>
+
+            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+            <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+            <p class="text-xs text-gray-500 text-center mt-3">
+              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+              and Angular. She is a Google Developer Expert in Web technologies
+              & Angular.
+            </p>
+          </div>
+
+          <!-- CARD END -->
+
+          <!-- CARD START -->
+          <div
+            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+          >
+            <div
+              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+            >
+              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
+            </div>
+
+            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+            <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+            <p class="text-xs text-gray-500 text-center mt-3">
+              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+              and Angular. She is a Google Developer Expert in Web technologies
+              & Angular.
+            </p>
+          </div>
+          <!-- CARD END -->
+
+          <!-- CARD START -->
+          <div
+            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+          >
+            <div
+              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+            >
+              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
+            </div>
+
+            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
+            <h6 class="mt-2 text-sm font-medium">Title</h6>
+
+            <p class="text-xs text-gray-500 text-center mt-3">
+              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
+              and Angular. She is a Google Developer Expert in Web technologies
+              & Angular.
+            </p>
+          </div>
+          <!-- CARD END -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
     <!-- MENTORS - END -->
     <div
       class="footer-stick-wrapper fixed bottom-0 w-full flex py-2 px-2 bg-red-100"
@@ -682,12 +710,12 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> -->
 
     <script>
-      $("#mobile-menu-button").click(function () {
-        $("#mobile-menu").toggle();
-        console.log("open");
+      $('#mobile-menu-button').click(function () {
+        $('#mobile-menu').toggle();
+        console.log('open');
       });
 
-      var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
+      var countDownDate = new Date('Mar 12, 2021 00:00:00').getTime();
 
       var x = setInterval(function () {
         var now = new Date().getTime();
@@ -701,15 +729,15 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        $(".days").html(`${days}`);
-        $(".hours").html(`${hours}`);
-        $(".min").html(`${minutes}`);
-        $(".sec").html(`${seconds}`);
+        $('.days').html(`${days}`);
+        $('.hours').html(`${hours}`);
+        $('.min').html(`${minutes}`);
+        $('.sec').html(`${seconds}`);
 
         // If the count down is over, write some text
         if (distance < 0) {
           clearInterval(x);
-          $(".footer-font").html(`Expired`);
+          $('.footer-font').html(`Expired`);
         }
       }, 1000);
     </script>
