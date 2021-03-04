@@ -1,6 +1,6 @@
 /* landing.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 .title-font {
   font-size: 50px;
   background: linear-gradient(
@@ -14,28 +14,28 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .primary-font {
   font-size: 30px;
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .description-font {
   font-size: 18px;
   color: #000000;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
 .muted-font {
   font-size: 14px;
   color: #b3b3b3;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
@@ -65,15 +65,15 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../font/Montserrat-Bold.ttf');
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Bold.ttf");
 }
 @font-face {
-  font-family: 'Nunito';
-  src: url('../font/Nunito-Regular.ttf');
+  font-family: "Nunito";
+  src: url("../font/Nunito-Regular.ttf");
 }
 .sub-header {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
 }
 .header-red {
@@ -174,8 +174,8 @@ body {
   }
 }
 /* header.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 .title-font {
   font-size: 50px;
@@ -190,28 +190,28 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .primary-font {
   font-size: 30px;
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .description-font {
   font-size: 18px;
   color: #000000;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
 .muted-font {
   font-size: 14px;
   color: #b3b3b3;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
@@ -261,7 +261,7 @@ body {
 }
 /* footer.css */
 .footer-wrapper {
-  background-image: url('../img/wave.svg');
+  background-image: url("../img/wave.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,25 +288,25 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .primary-font {
   font-size: 30px;
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .description-font {
   font-size: 18px;
   color: #000000;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 .muted-font {
   font-size: 14px;
   color: #b3b3b3;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
@@ -333,18 +333,14 @@ body {
 }
 
 .collapsible:after {
-  content: '\002B';
+  content: "\002B";
   color: black;
   font-weight: bold;
   float: right;
-  position: absolute;
-  margin-left: 5px;
-  right: 25px;
-  top: 30%
 }
 
 .active:after {
-  content: '\2212';
+  content: "\2212";
 }
 
 .content {
