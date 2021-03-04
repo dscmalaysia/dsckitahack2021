@@ -123,32 +123,44 @@
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
                     href="#home"
-                    class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    class="bg-gray-700 text-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onclick="menuToggler(this.id)"
+                    id="home-button"
                     >Home</a
                   >
                   <a
                     href="#about"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onclick="menuToggler(this.id)"
+                    id="about-button"
                     >About</a
                   >
                   <a
                     href="#schedule"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onclick="menuToggler(this.id)"
+                    id="schedule-button"
                     >Schedule</a
                   >
                   <a
                     href="#faq"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onclick="menuToggler(this.id)"
+                    id="faq-button"
                     >FAQ</a
                   >
                   <a
                     href="#prize"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onclick="menuToggler(this.id)"
+                    id="prizes-button"
                     >Prizes</a
                   >
                   <a
                     href="#sponsor"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onclick="menuToggler(this.id)"
+                    id="sponsors-button"
                     >Sponsors</a
                   >
                   <button class="reg-button-small description-font rounded">
@@ -163,42 +175,56 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden" id="mobile-menu">
+        <div class="sm:hidden md:hidden lg:hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
               href="#home"
-              class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              class=" text-gray-300 bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="home-mobile-button"
               >Home</a
             >
             <a
               href="#about"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="about-mobile-button"
               >About</a
             >
             <a
               href="#schedule"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="schedule-mobile-button"
               >Schedule</a
             >
             <a
               href="#faq"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="faq-mobile-button"
               >FAQ</a
             >
             <a
               href="#prize"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="prize-mobile-button"
               >Prizes</a
             >
             <a
               href="#sponsor"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="sponsor-mobile-button"
               >Sponsors</a
             >
             <a
               href="common/registration.html"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onclick="menuToggler(this.id)"
+              id="register-mobile-button"
               >Register Now</a
             >
           </div>
@@ -870,7 +896,7 @@
     </div>
 
     <div
-      class="footer-wrapper w-full flex py-10 px-10 sm:w-full sm:flex-row md:flex-row lg:flex-row"
+      class="footer-wrapper w-full justify-between flex py-10 px-10 sm:w-full sm:flex-row md:flex-row lg:flex-row"
     >
       <div class="left-section sm:w-3/6l py-4 px-4">
         <img src="img/dsc_logo_name.svg" alt="" />
@@ -890,8 +916,31 @@
     <script>
       $("#mobile-menu-button").click(function () {
         $("#mobile-menu").toggle();
-        console.log("open");
       });
+
+      function menuToggler(id){
+        console.log(id)
+        $("#mobile-menu").hide();
+
+        document.querySelector(`#home-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#about-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#prizes-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#schedule-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#faq-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#sponsors-button`).classList.remove("bg-gray-700")
+
+        document.querySelector(`#home-mobile-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#about-mobile-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#prize-mobile-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#schedule-mobile-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#faq-mobile-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#sponsor-mobile-button`).classList.remove("bg-gray-700")
+        document.querySelector(`#register-mobile-button`).classList.remove("bg-gray-700")
+        
+        document.querySelector(`#${id}`).classList.add("bg-gray-700")
+
+
+      }
 
       var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
 
