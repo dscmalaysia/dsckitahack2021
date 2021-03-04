@@ -1,13 +1,19 @@
-# index.html merging process
-
-**_MERGING PROCESS BEGAN 03/03_**
+# index.html UPDATE
 
 ## Key notes
 
-1.  All CSS files merged into one single CSS file `main.css` duplicates are not yet removed, we need to meet and talk about them
-2.  The `index.html` file is not fully merged, some parts are still missing and some are not made responsive yet. Need the help of the team to make them so.
-3.  Imported the pictures from Figma as SVGs.
-4.  Added relevant comments to make the code easier to read and review
+1.  Added the FAQ section. It is dynamic and responsive.
+
+### How does it work?
+
+```js
+let FAQs = [
+  ["Question1", "answer1"],
+  ["Question2", "answer2"],
+];
+```
+
+It's a 2D array like such. Any new FAQs append it to the array and it will automatically be rendered. The array is sat in `js/FAQ.js`
 
 ## What's next
 
