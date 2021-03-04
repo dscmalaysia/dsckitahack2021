@@ -337,7 +337,10 @@ body {
   color: black;
   font-weight: bold;
   float: right;
+  position: absolute;
   margin-left: 5px;
+  right: 25px;
+  top: 30%
 }
 
 .active:after {
