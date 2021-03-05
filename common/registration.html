@@ -15,7 +15,7 @@
     <!-- JqueryCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <title>Document</title>
+    <title>Registration Page</title>
 
     <script>
 /* 
@@ -82,8 +82,8 @@
                   <a href="../index.html#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                   <a href="../index.html#schedule" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Schedule</a>
                   <a href="../index.html#faq" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
-                  <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prizes</a>
-                  <a href="../index.html#sponsor" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sponsors</a>
+                  <!-- <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prizes</a>
+                  <a href="../index.html#sponsor" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sponsors</a> -->
                   <button href="https://forms.gle/PN7W8ydGFqYAyjEf7" class="reg-button-small description-font rounded">Register Now</button>
                 </div>
               </div>
@@ -92,7 +92,7 @@
         </div>
       
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden md:hidden lg:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="../index.html"class=" text-gray-300 bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
@@ -104,10 +104,10 @@
             id="schedule-mobile-button">Schedule</a>
             <a href="../index.html#faq" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onclick="menuToggler(this.id)"
             id="faq-mobile-button">FAQ</a>
-            <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onclick="menuToggler(this.id)"
+            <!-- <a href="../index.html#prize" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onclick="menuToggler(this.id)"
             id="prize-mobile-button">Prizes</a>
             <a href="../index.html#sponsor" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onclick="menuToggler(this.id)"
-            id="sponsor-mobile-button">Sponsors</a>
+            id="sponsor-mobile-button">Sponsors</a> -->
             <a href="https://forms.gle/PN7W8ydGFqYAyjEf7" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onclick="menuToggler(this.id)"
             id="register-mobile-button">Register Now</a>
           </div>
@@ -177,7 +177,7 @@
         alt="Prizes"
       />
       <h1
-        class="sm:text-4xl text-xl font-bold col-start-2 justify-self-start sub-header header-red ml-2"
+        class="sm:text-4xl text-xl col-start-2 justify-self-start sub-header header-red ml-2"
         style="color: #A50E0E;"
       >
         Resource

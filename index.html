@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="css/footer-stick.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="shortcut icon" href="./img/dsc_logo.ico" type="image/x-icon">
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- JqueryCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -148,7 +150,7 @@
                     id="faq-button"
                     >FAQ</a
                   >
-                  <a
+                  <!-- <a
                     href="#prize"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     onclick="menuToggler(this.id)"
@@ -161,7 +163,7 @@
                     onclick="menuToggler(this.id)"
                     id="sponsors-button"
                     >Sponsors</a
-                  >
+                  > -->
                   <button class="reg-button-small description-font rounded">
                     <a href="common/registration.html">
                       Register Now
@@ -174,7 +176,7 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden md:hidden lg:hidden" id="mobile-menu">
+        <div class="hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
@@ -205,7 +207,7 @@
               id="faq-mobile-button"
               >FAQ</a
             >
-            <a
+            <!-- <a
               href="#prize"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onclick="menuToggler(this.id)"
@@ -218,7 +220,7 @@
               onclick="menuToggler(this.id)"
               id="sponsor-mobile-button"
               >Sponsors</a
-            >
+            > -->
             <a
               href="common/registration.html"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -347,17 +349,17 @@
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
           style="background-color: #D2E3FC"
         >
+        <h1
+          class="sm:text-3xl text-xl col-start-1 sub-header header-blue justify-self-end mr-5"
+          style="color: #174EA6;"
+        >
+          Schedule
+        </h1>
           <img
             src="img/time.svg"
-            class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+            class="w-1/2 col-start-2 justify-self-start ml-5 md:h-30 h-20"
             alt="Prizes"
           />
-          <h1
-            class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header ml-5"
-            style="color: #174EA6;"
-          >
-            Schedule
-          </h1>
       </div>
 
       <div class="flex flex-wrap" id="tabs-id">
@@ -479,43 +481,25 @@
      class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
      style="background-color: #ceead6"
    >
+   <img
+     src="img/FAQ.svg"
+     class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+     alt="FAQ"
+   />
      <h1
-       class="sm:text-3xl text-xl col-start-1 justify-self-end sub-header header-green mr-5"
+       class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header header-red ml-5"
      >
        FAQ
      </h1>
-     <img
-       src="img/FAQ.svg"
-       class="w-1/2 justify-self-start -mt-10 col-start-2 ml-5 md:h-30 h-20"
-       alt="FAQ"
-     />
-   </div>
-   <!-- FAQ BODY -->
-   <section class="flex flex-wrap justify-center items-center">
+    </div>
+    <!-- FAQ BODY -->
+    <section class="flex flex-wrap justify-center items-center">
      <div class="shadow w-full mx-20" id="FAQ-WRAPPER">
-       <!--
-       
-       <article class="border-b">
-         <div class="border-l-2 bg-grey-lightest border-indigo">
-           <header
-             class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none collapsible"
-           >
-             <span class="text-indigo font-thin text-xl">
-               '+VAIABLE_QUESTION'
-             </span>
-           </header>
-           <div class="content">
-             <div class="p-10 text-grey-darkest">
-               <p>'+VAIABLE_ANSWER'</p>
-             </div>
-           </div>
-         </div>
-       </article>-->
      </div>
    </section>
   </div>
       <!-- Prize section - START -->
-      <div id="prize">
+      <!-- <div id="prize">
       <div
         class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
         style="background-color: #fad2cf"
@@ -531,12 +515,11 @@
           Prize
         </h1>
       </div>
-      <div>
+      <div> -->
         <!--Card 1-->
-        <div
+        <!-- <div
           class="max-w-4xl grid lg:grid-cols-2 sm:grid-cols-2 border-2 border-gray-400 rounded-lg sm:mx-auto mx-10 items-center"
         >
-          <!-- lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r -->
           <img class="p-10 justify-self-center" src="./img/prize-card.svg" />
           <div class="p-4 flex leading-normal">
             <div class="mb-8">
@@ -554,11 +537,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
       <!-- Prize section - END -->
 
       <!-- SPONSORS - START -->
-      <div id="sponsor">
+      <!-- <div id="sponsor">
       <div>
         <div
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
@@ -576,16 +559,12 @@
           />
         </div>
       </div>
-      <!-- <div class="flex flex-wrap -m-4 items-center py-10 w-full justify-center"> -->
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto"
         style="width: 60%"
       >
-        <!-- SPONSOR 1 -->
         <div class="max-w-xs" style="margin: 0 50px">
-          <!-- SPONSOR CARD - STRUCTURE -->
           <div class="bg-white shadow-xl rounded-lg py-3">
-            <!-- IMAGE -->
             <div class="photo-wrapper p-2">
               <img
                 class="rounded-full mx-auto"
@@ -594,15 +573,12 @@
                 alt="COMPANY NAME"
               />
             </div>
-            <!-- BODY -->
             <div class="p-2">
-              <!-- NAME OF THE COMPANY -->
               <h3
                 class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
               >
                 Jecelyn
               </h3>
-              <!-- Occupation -->
               <div class="text-center text-gray-400 text-xs font-semibold">
                 <p>A company that does nothing</p>
               </div>
@@ -620,85 +596,8 @@
           </div>
         </div>
 
-        <!-- SPONSOR 2 -->
-        <div class="max-w-xs" style="margin: 0 50px">
-          <!-- SPONSOR CARD - STRUCTURE -->
-          <div class="bg-white shadow-xl rounded-lg py-3">
-            <!-- IMAGE -->
-            <div class="photo-wrapper p-2">
-              <img
-                class="rounded-full mx-auto"
-                width="100"
-                height="100"
-                alt="COMPANY NAME"
-              />
-            </div>
-            <!-- BODY -->
-            <div class="p-2">
-              <!-- NAME OF THE COMPANY -->
-              <h3
-                class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
-              >
-                Jecelyn
-              </h3>
-              <!-- Occupation -->
-              <div class="text-center text-gray-400 text-xs font-semibold">
-                <p>A company that does nothing</p>
-              </div>
-              <p class="text-s w-15 text-center description-font my-4">
-                A DESCPRIPTION ABOUT THE COMPANY
-              </p>
-              <div class="text-center my-3">
-                <a
-                  class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-                  href="#"
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SPONSOR 3 -->
-        <div class="max-w-xs" style="margin: 0 50px">
-          <!-- SPONSOR CARD - STRUCTURE -->
-          <div class="bg-white shadow-xl rounded-lg py-3">
-            <!-- IMAGE -->
-            <div class="photo-wrapper p-2">
-              <img
-                class="rounded-full mx-auto"
-                width="100"
-                height="100"
-                alt="COMPANY NAME"
-              />
-            </div>
-            <!-- BODY -->
-            <div class="p-2">
-              <!-- NAME OF THE COMPANY -->
-              <h3
-                class="text-center text-xl text-gray-900 font-medium leading-10 my-1"
-              >
-                Jecelyn
-              </h3>
-              <!-- Occupation -->
-              <div class="text-center text-gray-400 text-xs font-semibold">
-                <p>A company that does nothing</p>
-              </div>
-              <p class="text-s w-15 text-center description-font my-4">
-                A DESCPRIPTION ABOUT THE COMPANY
-              </p>
-              <div class="text-center my-3">
-                <a
-                  class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-                  href="#"
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </div> -->
       <!-- JUDGES - START -->
       <div id="judges">
         <!-- JUDGES HEADER - START -->
@@ -706,16 +605,16 @@
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
           style="background-color: #fad2cf"
         >
+        <h1
+          class="sm:text-3xl text-xl col-start-1 justify-self-end sub-header header-red mr-5"
+        >
+          Judges
+        </h1>
           <img
             src="img/judges.svg"
-            class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
-            alt="Prizes"
+            class="w-1/2 justify-self-start col-start-2 ml-5 md:h-30 h-20"
+            alt="Judges"
           />
-          <h1
-            class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header header-red ml-5"
-          >
-            Judges
-          </h1>
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center mx-auto"
@@ -753,6 +652,22 @@
               Renard is Advisor to CENT-GPS where he is responsible for advancing the organisation’s work in the field of climate change and sustainability.
             </p>
           </div>
+          <div
+            class="flex flex-col items-center justify-center align- bg-white p-4 shadow-xl rounded-lg max-w-sm content-start"
+          >
+            <div
+              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
+            >
+              <img src="./img/vinlim.png" alt="" class="object-cover h-full w-full" />
+            </div>
+
+            <h2 class="mt-4 font-bold text-xl">Vin Lim</h2>
+            <h6 class="mt-2 text-sm font-medium text-center">Co-Founder and CEO of Green Room</h6>
+
+            <p class="text-xs text-gray-500 text-center mt-3">
+              Vin is the Co-Founder and CEO of Green Room, a leading mobile and web application development company, with a portfolio of major international and local brands. 
+            </p>
+          </div>
         </div>
       </div>
       <!-- JUDHES - END -->
@@ -763,16 +678,16 @@
           class="grid grid-cols-2 items-center gap-0 mx-2 my-10 rounded-lg h-10 place-content-center"
           style="background-color: #ceead6"
         >
+          <img
+            src="img/mentors.svg"
+            class="w-1/2 justify-self-end col-start-1 mr-5 md:h-30 h-20"
+            alt="Mentors"
+          />
           <h1
-            class="sm:text-3xl text-xl col-start-1 justify-self-end sub-header header-green mr-5"
+            class="sm:text-3xl text-xl col-start-2 justify-self-start sub-header header-green ml-5"
           >
             Mentors
           </h1>
-          <img
-            src="img/mentors.svg"
-            class="w-1/2 justify-self-start col-start-2 ml-5 md:h-30 h-20"
-            alt="Prizes"
-          />
         </div>
         <!-- MENTORS' HEADER - END -->
 
@@ -788,89 +703,22 @@
         > -->
           <!-- CARD START -->
           <div
-            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
+            class="flex flex-col items-center justify-center align- bg-white p-4 shadow-xl rounded-lg max-w-sm content-start"
           >
             <div
               class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
             >
-              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
+              <img src="./img/saurabh.png" alt="" class="object-cover h-full w-full" />
             </div>
 
-            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-            <h6 class="mt-2 text-sm font-medium text-center">Title</h6>
+            <h2 class="mt-4 font-bold text-xl">Saurabh Arora</h2>
+            <h6 class="mt-2 text-sm font-medium text-center">Senior Engineer at Viki</h6>
 
             <p class="text-xs text-gray-500 text-center mt-3">
-              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-              and Angular. She is a Google Developer Expert in Web technologies
-              & Angular.
+              Saurabh is a Google Developer Expert and a Senior Engineer on the Android Team at Viki, Singapore where he works on both their mobile and TV apps. He has been on the team for over 4 years, a journey that has seen the Viki app being nominated for Google Play Awards, been an Android Excellence awardee, part of the editor's choice apps and launch partners for Android Go and Instant Apps. 
             </p>
           </div>
           <!-- CARD END -->
-          <!-- CARD START -->
-
-          <div
-            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-          >
-            <div
-              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-            >
-              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
-            </div>
-
-            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-            <h6 class="mt-2 text-sm font-medium text-center">Title</h6>
-
-            <p class="text-xs text-gray-500 text-center mt-3">
-              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-              and Angular. She is a Google Developer Expert in Web technologies
-              & Angular.
-            </p>
-          </div>
-
-          <!-- CARD END -->
-
-          <!-- CARD START -->
-          <div
-            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-          >
-            <div
-              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-            >
-              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
-            </div>
-
-            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-            <h6 class="mt-2 text-sm font-medium text-center">Title</h6>
-
-            <p class="text-xs text-gray-500 text-center mt-3">
-              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-              and Angular. She is a Google Developer Expert in Web technologies
-              & Angular.
-            </p>
-          </div>
-          <!-- CARD END -->
-
-          <!-- CARD START -->
-          <div
-            class="flex flex-col items-center justify-center bg-white p-4 shadow-xl rounded-lg max-w-sm"
-          >
-            <div
-              class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40"
-            >
-              <img src="./img/judge1.svg" alt="" class="h-full w-full" />
-            </div>
-
-            <h2 class="mt-4 font-bold text-xl">Jecelyn</h2>
-            <h6 class="mt-2 text-sm font-medium text-center">Title</h6>
-
-            <p class="text-xs text-gray-500 text-center mt-3">
-              Jecelyn Yeen speaks English, Mandarin, C#, Typescript, JavaScript
-              and Angular. She is a Google Developer Expert in Web technologies
-              & Angular.
-            </p>
-          </div>
-          <!-- CARD END -->
-          <!-- </div> -->
         </div>
       </div>
     </section>
