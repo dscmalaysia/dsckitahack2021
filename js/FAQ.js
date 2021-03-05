@@ -32,13 +32,13 @@ let FAQs = [
     'Who owns the idea / solution?',
     'You, and only you! We don’t take any credit / royalties or any of the sort from you / your solution.',
   ],
+  // [
+  //   'How is the evaluation criteria?',
+  //   '<h3><strong>Impact</strong></h3><li>Does the entry establish a clear challenge focused on one or more of the United Nations 17 Sustainable Development Goals? Is it explained in a clear manner with specific Sustainable Development Goal targets they are looking to solve for? [10]</li><li>How effectively does the solution address the challenge identified by the team? [20]</li><li>Is there evidence of a next step? Does the team display a plan for future extension if they were to continue? [10]</li><h3><strong>Technology</strong></h3><li>Has the team clearly explained what Google technology they used, why, and included guidance on how to run their code? [10]</li><li>Has the team made effective product and technical decisions for their solution? [10]</li>',
+  // ],
   [
-    'How is the evaluation criteria?',
-    '<h3><strong>Impact</strong></h3><li>Does the entry establish a clear challenge focused on one or more of the United Nations 17 Sustainable Development Goals? Is it explained in a clear manner with specific Sustainable Development Goal targets they are looking to solve for? [10]</li><li>How effectively does the solution address the challenge identified by the team? [20]</li><li>Is there evidence of a next step? Does the team display a plan for future extension if they were to continue? [10]</li><h3><strong>Technology</strong></h3><li>Has the team clearly explained what Google technology they used, why, and included guidance on how to run their code? [10]</li><li>Has the team made effective product and technical decisions for their solution? [10]</li>',
-  ],
-  [
-    "Evaluation Criteria",
-    '<h1 class=text-3xl>Impact</h1><ul class="list-disc ml-10"><li>Does the entry establish a clear challenge focused on one or more of the United Nations 17 Sustainable Development Goals? Is it explained in a clear manner with specific Sustainable Development Goal targets they are looking to solve for? [10]<li>How effectively does the solution address the challenge identified by the team? [20]<li>Is there evidence of a next step? Does the team display a plan for future extension if they were to continue? [10]</ul><h1 class=text-3xl>Technology</h1><ul class="list-disc ml-10"><li>Has the team clearly explained what Google technology they used, why, and included guidance on how to run their code? [10]<li>Has the team made effective product and technical decisions for their solution? [10]</ul><p>Total marks: 60',
+    'Evaluation Criteria',
+    '<h1 class=text-xl>Impact</h1><ul class="list-disc ml-10"><li>Does the entry establish a clear challenge focused on one or more of the United Nations 17 Sustainable Development Goals? Is it explained in a clear manner with specific Sustainable Development Goal targets they are looking to solve for? [10]<li>How effectively does the solution address the challenge identified by the team? [20]<li>Is there evidence of a next step? Does the team display a plan for future extension if they were to continue? [10]</ul><h1 class=text-xl>Technology</h1><ul class="list-disc ml-10"><li>Has the team clearly explained what Google technology they used, why, and included guidance on how to run their code? [10]<li>Has the team made effective product and technical decisions for their solution? [10]</ul><p>Total marks: 60',
   ],
 ];
 let QUESTION = '',
