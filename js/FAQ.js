@@ -5,7 +5,7 @@ let FAQs = [
   ],
   [
     'What is a hackathon? Can I hack Google?',
-    'A hackathon is a design sprint-like event; often, in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively on software projects. If you manage to hack google, do tell them here for a bounty: https://www.google.com/about/appsecurity/ ',
+    'A hackathon is a design sprint-like event; often, in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively on software projects. If you manage to hack google, do tell them here for a bounty: <a style="color: blue; text-decoration:underline;" href="https://www.google.com/about/appsecurity/">https://www.google.com/about/appsecurity/</a>',
   ],
   [
     'Do I have to form a team to participate?',
@@ -14,7 +14,7 @@ let FAQs = [
   ['Can I solo team then?', 'You can. But what is the fun in it then? 🥺'],
   [
     'What do I have to hack/solve for this hackathon?',
-    'The theme of this hackathon revolves around the 17 UN Sustainable Development Goals (which can be found @ https://sdgs.un.org/goals). Teams are tasked to <b>solve for one or more</b> of the United Nations 17 Sustainable Development Goals using Google technology.',
+    'The theme of this hackathon revolves around the <a style="color: blue; text-decoration:underline;" href="https://sdgs.un.org/goals">17 UN Sustainable Development Goals</a>. Teams are tasked to <b>solve for one or more</b> of the United Nations 17 Sustainable Development Goals using Google technology.',
   ],
   [
     'What are the SDGs?',
@@ -26,7 +26,7 @@ let FAQs = [
   ],
   [
     'What is the Solution Challenge?',
-    'The 2021 Solution Challenge mission is to solve for one or more of the United Nations 17 Sustainable Development Goals using Google technology. You can view more details here: https://developers.google.com/community/dsc-solution-challenge',
+    'The 2021 Solution Challenge mission is to solve for one or more of the United Nations 17 Sustainable Development Goals using Google technology. You can view more details here: <a style="color: blue; text-decoration:underline;" href="https://developers.google.com/community/dsc-solution-challenge">https://developers.google.com/community/dsc-solution-challenge</a>',
   ],
   [
     'Who owns the idea / solution?',
