@@ -103,6 +103,25 @@ li {
   background-color: #e8f0fe;
 }
 
+.collapsibleWhat:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  position: absolute;
+  margin-left: 5px;
+  right: 25px;
+  top: 30%
+}
+
+@media only screen and (max-width: 766px) {
+  .collapsibleWhat:after{
+    margin-left: 2px;
+    right: 20px;
+    top: 15%
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .title-font-reg {
     font-size: 56px;
