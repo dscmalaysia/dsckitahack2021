@@ -7,7 +7,7 @@
 @import 'tailwindcss/utilities';
 
 .mobile-title-font-reg {
-  font-size: 24px;
+  font-size: 36px;
   background: -webkit-linear-gradient(#e37400, #fbbc04);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,9 +103,28 @@ li {
   background-color: #e8f0fe;
 }
 
+.collapsibleWhat:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  position: absolute;
+  margin-left: 5px;
+  right: 25px;
+  top: 30%
+}
+
+@media only screen and (max-width: 766px) {
+  .collapsibleWhat:after{
+    margin-left: 2px;
+    right: 20px;
+    top: 15%
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .title-font-reg {
-    font-size: 50px;
+    font-size: 56px;
     background: -webkit-linear-gradient(#e37400, #fbbc04);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
