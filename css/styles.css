@@ -5,7 +5,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
+.discord-purple {
+  background-color: #7289da;
+}
 .mobile-title-font-reg {
   font-size: 36px;
   background: -webkit-linear-gradient(#e37400, #fbbc04);
@@ -111,14 +113,14 @@ li {
   position: absolute;
   margin-left: 5px;
   right: 25px;
-  top: 30%
+  top: 30%;
 }
 
 @media only screen and (max-width: 766px) {
-  .collapsibleWhat:after{
+  .collapsibleWhat:after {
     margin-left: 2px;
     right: 20px;
-    top: 15%
+    top: 15%;
   }
 }
 

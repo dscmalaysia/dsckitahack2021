@@ -11,7 +11,10 @@ let FAQs = [
     'Do I have to form a team to participate?',
     'Not at all! If you prefer to run solo, feel free to register as an individual team in our Google Form! If you prefer to participate with a group of your friends, you can participate with up to 4 of your friends in a team!',
   ],
-  ['Can I solo team then?', 'You can. But what is the fun in it then? 🥺'],
+  [
+    'Can I solo team then?',
+    'You can. But what is the fun in it then? 🥺. You can find your team members through our discord server <a style="color: blue; text-decoration:underline;" href="https://discord.gg/yqZCfUp88s">here</a>',
+  ],
   [
     'What do I have to hack/solve for this hackathon?',
     'The theme of this hackathon revolves around the <a style="color: blue; text-decoration:underline;" href="https://sdgs.un.org/goals">17 UN Sustainable Development Goals</a>. Teams are tasked to <b>solve for one or more</b> of the United Nations 17 Sustainable Development Goals using Google technology.',
